@@ -1,6 +1,6 @@
 /* PORTFOLIO HEADER */
 .page-header { padding:6rem 3rem 4rem; position:relative; overflow:hidden; border-bottom:1px solid var(--border-dim); }
-.page-header-bg { position:absolute; inset:0; background:radial-gradient(ellipse 50% 80% at 80% 50%, rgba(196,151,58,0.05) 0%, transparent 70%); }
+.page-header-bg { position:absolute; inset:0; background:radial-gradient(ellipse 50% 80% at 80% 50%, rgba(204,51,51,0.05) 0%, transparent 70%); }
 .page-header-grid { position:absolute; inset:0; background-image:linear-gradient(var(--border-dim) 1px, transparent 1px),linear-gradient(90deg, var(--border-dim) 1px, transparent 1px); background-size:60px 60px; -webkit-mask-image: radial-gradient(ellipse 60% 100% at 80% 50%, black 0%, transparent 80%); mask-image: radial-gradient(ellipse 60% 100% at 80% 50%, black 0%, transparent 80%); }
 .page-header-content { position:relative; z-index:2; max-width:800px; }
 .page-eyebrow { font-family:var(--font-mono); font-size:0.9rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:1.2rem; }
@@ -25,7 +25,7 @@
 
 /* PORTFOLIO SECTION */
 .portfolio-section { padding:4rem 3rem 6rem; }
-.category-label { font-family:var(--font-mono); font-size:0.9rem; letter-spacing:0.22em; text-transform:uppercase; color:#8a5c10; margin-bottom:2rem; margin-top:4rem; padding-bottom:0.8rem; border-bottom:2px solid rgba(176,125,44,0.25); font-weight:700; }
+.category-label { font-family:var(--font-mono); font-size:0.9rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); margin-bottom:2rem; margin-top:4rem; padding-bottom:0.8rem; border-bottom:2px solid rgba(204,51,51,0.25); font-weight:700; }
 .category-label:first-child { margin-top:0; }
 
 /* PROJECTS */
@@ -67,7 +67,7 @@
 .pr-sub { font-size:0.95rem; color:var(--text-muted); margin-bottom:0.8rem; }
 .pr-tags { display:flex; flex-wrap:wrap; gap:0.35rem; }
 .pr-tag { font-family:var(--font-mono); font-size:0.85rem; letter-spacing:0.08em; color:#555; border:1px solid #C7C7CC; padding:0.18rem 0.5rem; text-transform:uppercase; }
-.pr-tag.gold { color:#8a5c10; border-color:#B07D2C; background:rgba(176,125,44,0.08); font-weight:600; }
+.pr-tag.red { color:var(--red); border-color:var(--red); background:rgba(204,51,51,0.08); font-weight:600; }
 
 .pr-col strong { display:block; font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:#555; font-weight:600; margin-bottom:0.3rem; }
 .pr-col span { font-size:0.95rem; color:var(--text); }
@@ -76,7 +76,7 @@
 
 .badge { display:inline-flex; align-items:center; gap:0.35rem; font-family:var(--font-mono); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase; padding:0.28rem 0.65rem; border:1px solid; white-space:nowrap; font-weight:600; }
 .badge-green { color:#1a6b35; border-color:rgba(45,125,70,0.4); background:rgba(45,125,70,0.07); }
-.badge-gold  { color:#8a5c10; border-color:rgba(176,125,44,0.4); background:rgba(176,125,44,0.07); }
+.badge-red  { color:var(--red); border-color:rgba(204,51,51,0.4); background:rgba(204,51,51,0.07); }
 .badge-red  { color:#A32A2A; border-color:rgba(163,42,42,0.4); background:rgba(163,42,42,0.07); }
 .bdot { width:4px; height:4px; border-radius:50%; background:currentColor; flex-shrink:0; }
 .bdot.pulse { animation:pulse 2s infinite; }
@@ -124,7 +124,7 @@
 .bim-num { font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.1em; color:var(--text-dim); margin-bottom:1.5rem; }
 .bim-video-area { height:170px; background:var(--bg); border:1px solid var(--border-dim); display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem; position:relative; overflow:hidden; }
 .bim-video-area::after { content:''; position:absolute; inset:0; background:linear-gradient(var(--border-dim) 1px,transparent 1px),linear-gradient(90deg, var(--border-dim) 1px,transparent 1px); background-size:20px 20px; pointer-events:none; }
-.bim-video-label { font-family:var(--font-mono); font-size:0.85rem; letter-spacing:0.15em; color:rgba(196,151,58,0.25); text-transform:uppercase; position:relative; z-index:2; text-align:center; padding:1rem; line-height:1.8; }
+.bim-video-label { font-family:var(--font-mono); font-size:0.85rem; letter-spacing:0.15em; color:rgba(204,51,51,0.25); text-transform:uppercase; position:relative; z-index:2; text-align:center; padding:1rem; line-height:1.8; }
 .bim-name { font-family:var(--font-display); font-size:1.5rem; font-weight:400; color:var(--text); margin-bottom:0.5rem; }
 .bim-sub { font-size:0.95rem; color:var(--gold); font-family:var(--font-mono); letter-spacing:0.08em; margin-bottom:0.8rem; }
 .bim-desc { font-size:0.83rem; color:var(--text-muted); line-height:1.75; margin-bottom:1.2rem; }
@@ -213,3 +213,6 @@
   transform-origin: 0 0;
   cursor: grab;
 }
+
+.hl { font-weight: 500; }
+em { font-weight: 500; }
