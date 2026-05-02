@@ -7,20 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
   let width, height;
   let particles = [];
   
-  // Custom brand colors or monochromatic. User asked for Antigravity style (colorful) 
-  // but let's stick to brand colors (Gold, Red, Green) for cohesiveness
+  // Using black and red but they will be rendered with low opacity for a "light/transparent" look
   const colors = ['#000000', '#B22222', '#D32F2F', '#111111'];
   
   class Particle {
-    constructor() {
+    constructor(radius) {
       // Random position on a sphere surface
       const theta = Math.random() * Math.PI * 2;
       const phi = Math.acos(Math.random() * 2 - 1);
-      const r = 300; // Sphere radius
       
-      this.baseX = r * Math.sin(phi) * Math.cos(theta);
-      this.baseY = r * Math.sin(phi) * Math.sin(theta);
-      this.baseZ = r * Math.cos(phi);
+      this.baseX = radius * Math.sin(phi) * Math.cos(theta);
+      this.baseY = radius * Math.sin(phi) * Math.sin(theta);
+      this.baseZ = radius * Math.cos(phi);
       
       this.color = colors[Math.floor(Math.random() * colors.length)];
       this.size = Math.random() * 2 + 1;
@@ -31,10 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
     width = canvas.width = window.innerWidth;
     height = canvas.height = window.innerHeight;
     particles = [];
-    // More particles for larger screens
-    const particleCount = window.innerWidth < 768 ? 200 : 500;
+    
+    // Increase particle count for a fuller, larger sphere
+    const particleCount = window.innerWidth < 768 ? 400 : 800;
+    
+    // Dynamic radius to fit the screen
+    const radius = Math.min(width, height) * 0.45;
+    
     for (let i = 0; i < particleCount; i++) {
-      particles.push(new Particle());
+      particles.push(new Particle(radius));
     }
   }
 
@@ -47,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('mousemove', (e) => {
     // Calculate rotation based on mouse position relative to center
-    mouseX = (e.clientX - width / 2) * 0.001;
-    mouseY = (e.clientY - height / 2) * 0.001;
+    mouseX = (e.clientX - width / 2) * 0.0005;
+    mouseY = (e.clientY - height / 2) * 0.0005;
   });
 
   window.addEventListener('resize', init);
@@ -77,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let z2 = -p.baseX * Math.sin(currentRotationY) + z1 * Math.cos(currentRotationY);
 
       // Simple perspective projection
-      const perspective = 800;
+      const perspective = 1200; // Increased perspective to flatten the huge sphere slightly
       const scale = perspective / (perspective + z2);
       
       const px = cx + x2 * scale;
@@ -89,8 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.arc(px, py, p.size * scale, 0, Math.PI * 2);
         ctx.fillStyle = p.color;
         
-        // Add subtle opacity based on depth
-        ctx.globalAlpha = Math.max(0.1, Math.min(1, scale));
+        // Very subtle opacity for a light/transparent look
+        ctx.globalAlpha = Math.max(0.02, Math.min(0.25, scale * 0.3));
         ctx.fill();
         ctx.globalAlpha = 1;
       }
