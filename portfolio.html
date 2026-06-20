@@ -22,11 +22,11 @@
   <div class="cursor-ring" id="cursorRing"></div>
 
   <nav>
-    <a href="index.html" class="nav-logo">Chandran <span>Shanmugam</span></a>
+    <a href="index.html" class="nav-logo">Ar. Chandran <span>Shanmugam</span></a>
     <div class="nav-links">
       <a href="index.html#about">About</a>
-      <a href="index.html#services">Services</a>
-      <a href="index.html#credentials">Credentials</a>
+      <a href="index.html#services">Software</a>
+      <a href="index.html#work">Featured Tools</a>
       <a href="index.html#contact">Contact</a>
       <a href="portfolio.html" class="active">Portfolio</a>
     </div>
@@ -37,51 +37,107 @@
     <div class="page-header-bg"></div>
     <div class="page-header-grid"></div>
     <div class="page-header-content">
-      <div class="page-eyebrow">Studio Schicketanz · September 2022 — April 2026 · <span class="hl">8+ Years Total</span> · <span class="hl">3.5+ California</span></div>
-      <h1 class="page-title"><span class="hl">13</span> Projects.<br /><em>3 Jurisdictions.</em><br />All <span class="hl">Permitted</span>.</h1>
-      <p class="page-sub">California residential &amp; commercial portfolio — Palo Alto, Monterey County, and
-        Orange County. Full lifecycle: design through planning approvals, <span class="hl">building permits</span>, construction documents,
-        and GC coordination.</p>
+      <div class="page-eyebrow">Ar. Chandran Shanmugam · <span class="hl">8+ Years AEC Experience</span> · <span class="hl">C# &amp; Python Automation</span></div>
+      <h1 class="page-title"><span class="hl">3</span> Tools.<br /><em>13 Projects.</em><br />All <span class="hl">Automated</span>.</h1>
+      <p class="page-sub">Computational Architect &amp; BIM Developer Portfolio — featuring custom C#/.NET desktop utilities, Python AI integrations, and 13 permitted California residential/commercial building design projects.</p>
     </div>
   </div>
 
   <div class="stats-bar">
     <div class="stat-item">
       <div class="stat-num" style="color:var(--vibrant-red)">8+</div>
-      <div class="stat-label">Years Total Exp.</div>
+      <div class="stat-label">Years AEC Exp.</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">3.5+</div>
-      <div class="stat-label">California Exp.</div>
+      <div class="stat-num">3+</div>
+      <div class="stat-label">Software Tools</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">13</div>
-      <div class="stat-label">Projects Delivered</div>
+      <div class="stat-label">Design Projects</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">3</div>
-      <div class="stat-label">Jurisdictions</div>
+      <div class="stat-num">C# / .NET</div>
+      <div class="stat-label">Desktop Core</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">5</div>
-      <div class="stat-label">Active Concurrently</div>
+      <div class="stat-num">Python / MCP</div>
+      <div class="stat-label">AI Integration</div>
     </div>
     <div class="stat-item">
       <div class="stat-num" style="color:var(--vibrant-red)">100%</div>
-      <div class="stat-label">Permit Approval Rate</div>
+      <div class="stat-label">Code-Driven</div>
     </div>
   </div>
 
   <div class="filters">
-    <button class="filter-btn active" data-filter="all">All Projects</button>
+    <button class="filter-btn active" data-filter="all">All Work</button>
+    <button class="filter-btn" data-filter="bim">Software Tools</button>
     <button class="filter-btn" data-filter="paloalto">Palo Alto</button>
     <button class="filter-btn" data-filter="monterey">Monterey County</button>
     <button class="filter-btn" data-filter="orangecounty">Orange County</button>
-    <button class="filter-btn" data-filter="bim">BIM Tools</button>
-    <span class="filter-count" id="fc">Showing all 13 projects + 3 BIM tools</span>
+    <span class="filter-count" id="fc">Showing all 3 software tools + 13 projects</span>
   </div>
 
   <div class="portfolio-section">
+
+    <!-- BIM TOOLS -->
+    <div class="spacer"></div>
+    <div class="category-label" id="g-bim">// BIM Automation & Software Tools</div>
+    <div class="bim-grid">
+      <div class="bim-card">
+        <div class="bim-num">CS–001</div>
+        <div class="bim-video-area">
+          <!--
+          ADD VIDEO: Replace this div with:
+          <iframe width="100%" height="170" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          frameborder="0" allowfullscreen style="position:relative;z-index:2;border:none;"></iframe>
+        -->
+          <div class="bim-video-label">Paste YouTube embed here<br />Upload demo to YouTube → Share → Embed<br />Copy
+            the iframe code</div>
+        </div>
+        <div class="bim-name">SheetCraft</div>
+        <div class="bim-sub">Autodesk App Store · Sheet Automation</div>
+        <p class="bim-desc">Automates sheet creation, numbering, and titleblock population in Revit. Eliminates manual
+          setup across large CD sets.</p>
+        <div class="bim-tech"><span class="bim-tag">C# / .NET</span><span class="bim-tag">Revit API</span><span
+            class="bim-tag">WPF UI</span></div>
+        <span class="badge badge-red" style="margin-top:0.8rem;display:inline-flex;"><span
+            class="bdot pulse"></span>App Store Review</span>
+      </div>
+      <div class="bim-card">
+        <div class="bim-num">CS–002</div>
+        <div class="bim-video-area">
+          <div class="bim-video-label">Paste YouTube embed here<br />Upload demo to YouTube → Share → Embed<br />Copy
+            the iframe code</div>
+        </div>
+        <div class="bim-name">AI Connector</div>
+        <div class="bim-sub">MCP Bridge · Claude AI ↔ Revit</div>
+        <p class="bim-desc">Connects Claude AI to Revit via C# HTTP server and Python MCP. Natural language BIM commands
+          — query models, create elements, automate documentation.</p>
+        <div class="bim-tech"><span class="bim-tag">C#</span><span class="bim-tag">Python MCP</span><span
+            class="bim-tag">Claude AI</span><span class="bim-tag">Revit API</span></div>
+        <span class="badge badge-green" style="margin-top:0.8rem;display:inline-flex;"><span class="bdot"></span>Live —
+          Internal</span>
+      </div>
+      <div class="bim-card">
+        <div class="bim-num">CS–003</div>
+        <div class="bim-video-area">
+          <div class="bim-video-label">Paste YouTube embed here<br />Upload demo to YouTube → Share → Embed<br />Copy
+            the iframe code</div>
+        </div>
+        <div class="bim-name">Batch Export Module</div>
+        <div class="bim-sub">Multi-format Export · Production Tool</div>
+        <p class="bim-desc">Batch export Revit sheets to PDF, DWG, DWF with intelligent naming, folder structuring, and
+          revision tracking. Built for 100+ sheet CD sets.</p>
+        <div class="bim-tech"><span class="bim-tag">C#</span><span class="bim-tag">Revit API</span><span
+            class="bim-tag">PDF Export</span><span class="bim-tag">DWG Export</span></div>
+        <span class="badge badge-red" style="margin-top:0.8rem;display:inline-flex;"><span class="bdot pulse"></span>In
+          Development</span>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
 
     <!-- PALO ALTO -->
     <div class="category-label" id="g-paloalto">// Palo Alto · City of Palo Alto Planning & Building Dept.</div>
@@ -755,71 +811,15 @@
       </div>
     </div>
 
-    <!-- BIM TOOLS -->
-    <div class="spacer"></div>
-    <div class="category-label" id="g-bim">// BIM Automation · CS Revit Labs</div>
-    <div class="bim-grid">
-      <div class="bim-card">
-        <div class="bim-num">CS–001</div>
-        <div class="bim-video-area">
-          <!--
-          ADD VIDEO: Replace this div with:
-          <iframe width="100%" height="170" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-          frameborder="0" allowfullscreen style="position:relative;z-index:2;border:none;"></iframe>
-        -->
-          <div class="bim-video-label">Paste YouTube embed here<br />Upload demo to YouTube → Share → Embed<br />Copy
-            the iframe code</div>
-        </div>
-        <div class="bim-name">SheetCraft</div>
-        <div class="bim-sub">Autodesk App Store · Sheet Automation</div>
-        <p class="bim-desc">Automates sheet creation, numbering, and titleblock population in Revit. Eliminates manual
-          setup across large CD sets.</p>
-        <div class="bim-tech"><span class="bim-tag">C# / .NET</span><span class="bim-tag">Revit API</span><span
-            class="bim-tag">WPF UI</span></div>
-        <span class="badge badge-red" style="margin-top:0.8rem;display:inline-flex;"><span
-            class="bdot pulse"></span>App Store Review</span>
-      </div>
-      <div class="bim-card">
-        <div class="bim-num">CS–002</div>
-        <div class="bim-video-area">
-          <div class="bim-video-label">Paste YouTube embed here<br />Upload demo to YouTube → Share → Embed<br />Copy
-            the iframe code</div>
-        </div>
-        <div class="bim-name">AI Connector</div>
-        <div class="bim-sub">MCP Bridge · Claude AI ↔ Revit</div>
-        <p class="bim-desc">Connects Claude AI to Revit via C# HTTP server and Python MCP. Natural language BIM commands
-          — query models, create elements, automate documentation.</p>
-        <div class="bim-tech"><span class="bim-tag">C#</span><span class="bim-tag">Python MCP</span><span
-            class="bim-tag">Claude AI</span><span class="bim-tag">Revit API</span></div>
-        <span class="badge badge-green" style="margin-top:0.8rem;display:inline-flex;"><span class="bdot"></span>Live —
-          Internal</span>
-      </div>
-      <div class="bim-card">
-        <div class="bim-num">CS–003</div>
-        <div class="bim-video-area">
-          <div class="bim-video-label">Paste YouTube embed here<br />Upload demo to YouTube → Share → Embed<br />Copy
-            the iframe code</div>
-        </div>
-        <div class="bim-name">Batch Export Module</div>
-        <div class="bim-sub">Multi-format Export · Production Tool</div>
-        <p class="bim-desc">Batch export Revit sheets to PDF, DWG, DWF with intelligent naming, folder structuring, and
-          revision tracking. Built for 100+ sheet CD sets.</p>
-        <div class="bim-tech"><span class="bim-tag">C#</span><span class="bim-tag">Revit API</span><span
-            class="bim-tag">PDF Export</span><span class="bim-tag">DWG Export</span></div>
-        <span class="badge badge-red" style="margin-top:0.8rem;display:inline-flex;"><span class="bdot pulse"></span>In
-          Development</span>
-      </div>
-    </div>
-
   </div>
 
   <div class="cta-strip">
     <div class="reveal">
       <div class="cta-eyebrow">Get in Touch</div>
-      <h3 class="cta-title">Need <span class="hl">California-standard</span> permits,<br />CDs, or a <em>custom Revit tool?</em></h3>
+      <h3 class="cta-title">Open for <span class="hl">Software Development</span>,<br />BIM automation, or computational design roles.</h3>
     </div>
     <div class="cta-actions reveal">
-      <a href="mailto:chandran.s.dev@gmail.com" class="btn-primary">Send Email</a>
+      <a href="mailto:chandran.s.dev@gmail.com?subject=Job%20Inquiry%20-%20BIM%20Developer" class="btn-primary">Send Email</a>
       <a href="index.html#contact" class="btn-ghost">Contact Info</a>
     </div>
   </div>
@@ -831,8 +831,8 @@
   </div>
 
   <footer>
-    <div class="footer-brand">Chandran <span>Shanmugam</span> · CS Revit Labs</div>
-    <div class="footer-copy">© 2026 · Studio Schicketanz · csrevitlabs.com</div>
+    <div class="footer-brand">Ar. Chandran <span>Shanmugam</span></div>
+    <div class="footer-copy">© 2026 Ar. Chandran Shanmugam · All rights reserved.</div>
   </footer>
 
   <script type="module" src="js/portfolio.js"></script>
