@@ -3,80 +3,109 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R 7 0 R] /Count 2 >>
+<< /Type /Pages /Kids [3 0 R 7 0 R 9 0 R] /Count 3 >>
 endobj
 3 0 obj
 << /Type /Page /Parent 2 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /MediaBox [0 0 595.28 841.89] /Contents 4 0 R >>
 endobj
 4 0 obj
-<< /Length 4867 >>
+<< /Length 3939 >>
 stream
-BT /F2 22 Tf 54 790 Td (CHANDRAN S) Tj ET
-BT /F2 11 Tf 54 774 Td (Dynamo Programmer | Revit & BIM Specialist) Tj ET
-BT /F1 9 Tf 54 759 Td (Phone: +91 8526590200 / +91 7904053633  |  Email: 7904053633CR@GMAIL.COM) Tj ET
-BT /F1 9 Tf 54 747 Td (LinkedIn: www.linkedin.com/in/ar-chandran-shanmugam-421b7b149) Tj ET
-0.5 w 0.2 G 54 737 m 541.28 737 l S 0 G
-BT /F2 11 Tf 54 715 Td (PROFESSIONAL SUMMARY) Tj ET
-BT /F1 9.5 Tf 54 700 Td (Architect and BIM Specialist with over 6.5 years of professional experience,) Tj ET
-BT /F1 9.5 Tf 54 686.5 Td (including 1.5 years of specialized Dynamo programming \(Python\). Expertise in Revit) Tj ET
-BT /F1 9.5 Tf 54 673.0 Td (\(Architecture, Structure, MEP\) and computational design, delivering automation) Tj ET
-BT /F1 9.5 Tf 54 659.5 Td (solutions to improve efficiency in modelling and documentation. Skilled in Python) Tj ET
-BT /F1 9.5 Tf 54 646.0 Td (scripting within Dynamo, custom node/package creation, and basic C# for Revit API) Tj ET
-BT /F1 9.5 Tf 54 632.5 Td (applications. Proven track record of leading BIM workflows, producing high-quality) Tj ET
-BT /F1 9.5 Tf 54 619.0 Td (construction documentation, and collaborating across disciplines on international and) Tj ET
-BT /F1 9.5 Tf 54 605.5 Td (high-end residential/commercial projects.) Tj ET
-BT /F2 11 Tf 54 586.5 Td (TECHNICAL SKILLS) Tj ET
-BT /F2 9.5 Tf 54 565.5 Td (-) Tj ET
-BT /F1 9.5 Tf 66 565.5 Td (Dynamo \(1.5 years hands-on experience with Python scripting\) -- automation of Revit workflows) Tj ET
-BT /F2 9.5 Tf 54 552.5 Td (-) Tj ET
-BT /F1 9.5 Tf 66 552.5 Td (Python -- scripting for custom Dynamo nodes and logic sequences) Tj ET
-BT /F2 9.5 Tf 54 539.5 Td (-) Tj ET
-BT /F1 9.5 Tf 66 539.5 Td (Autodesk Revit \(Architecture, Structural, MEP\) -- modelling, families, LOD 300-400) Tj ET
-BT /F2 9.5 Tf 54 526.5 Td (-) Tj ET
-BT /F1 9.5 Tf 66 526.5 Td (C# -- basic understanding; applying for custom Dynamo/Revit API development) Tj ET
-BT /F2 9.5 Tf 54 513.5 Td (-) Tj ET
-BT /F1 9.5 Tf 66 513.5 Td (Computational geometry -- Rhino & Grasshopper) Tj ET
-BT /F2 9.5 Tf 54 500.5 Td (-) Tj ET
-BT /F1 9.5 Tf 66 500.5 Td (AutoCAD, SketchUp & V-Ray, Lumion, 3ds Max) Tj ET
-BT /F2 9.5 Tf 54 487.5 Td (-) Tj ET
-BT /F1 9.5 Tf 66 487.5 Td (Adobe Photoshop, Adobe InDesign) Tj ET
-BT /F2 9.5 Tf 54 474.5 Td (-) Tj ET
-BT /F1 9.5 Tf 66 474.5 Td (Microsoft Office, BIM coordination and cross-discipline communication) Tj ET
-BT /F2 11 Tf 54 452.5 Td (PROFESSIONAL EXPERIENCE) Tj ET
-BT /F2 10 Tf 54 444.5 Td (Architectural Job Captain) Tj ET
-BT /F1 9.5 Tf 190 444.5 Td (-- Studio Schicketanz, Bangalore) Tj ET
-BT /F2 9.5 Tf 400 444.5 Td (Dec 2022 - Present | 3 yrs 7 mos) Tj ET
-BT /F2 9.5 Tf 60 431.5 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 431.5 Td (Lead Revit modelling and production of construction documentation \(LOD 300-400\)) Tj ET
-BT /F1 9.5 Tf 70 418.5 Td (for luxury residential projects.) Tj ET
-BT /F2 9.5 Tf 60 405.5 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 405.5 Td (Delivered full construction support and documentation for 4 + high-class) Tj ET
-BT /F1 9.5 Tf 70 392.5 Td (residences in Carmel-by-the-Sea, CA -- including RFIs and client coordination.) Tj ET
-BT /F2 9.5 Tf 60 379.5 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 379.5 Td (Developed Dynamo scripts and Python-based automation for repetitive) Tj ET
-BT /F1 9.5 Tf 70 366.5 Td (documentation tasks, schedules, and detailing.) Tj ET
-BT /F2 9.5 Tf 60 353.5 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 353.5 Td (Implemented BIM workflows and standards across teams, mentoring junior) Tj ET
-BT /F1 9.5 Tf 70 340.5 Td (modelers.) Tj ET
-BT /F2 9.5 Tf 60 327.5 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 327.5 Td (Coordinated effectively with structural and MEP consultants to maintain) Tj ET
-BT /F1 9.5 Tf 70 314.5 Td (discipline compliance.) Tj ET
-BT /F2 10 Tf 54 296.5 Td (Architect) Tj ET
-BT /F1 9.5 Tf 110 296.5 Td (-- Jarinam Parallel Space, Bangalore) Tj ET
-BT /F2 9.5 Tf 450 296.5 Td (Dec 2021 - Dec 2022 | 1 yr) Tj ET
-BT /F2 9.5 Tf 60 283.5 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 283.5 Td (Produced detailed construction documentation and coordinated with consultants) Tj ET
-BT /F1 9.5 Tf 70 270.5 Td (for mid-size projects.) Tj ET
-BT /F2 9.5 Tf 60 257.5 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 257.5 Td (Conducted site visits, design reviews, and implemented revisions within Revit) Tj ET
-BT /F1 9.5 Tf 70 244.5 Td (models.) Tj ET
-BT /F2 9.5 Tf 60 231.5 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 231.5 Td (Created Revit models \(LOD 300-350\) for residential and commercial projects) Tj ET
-BT /F1 9.5 Tf 70 218.5 Td (\(Hosur residence, FM Silks, Pune apartments\).) Tj ET
-BT /F2 9.5 Tf 60 205.5 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 205.5 Td (Coordinated drawings, vendors, and consultants for timely deliverables.) Tj ET
-BT /F2 9.5 Tf 60 192.5 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 192.5 Td (Supported international BIM projects \(Australian and Dubai warehouse packages\).) Tj ET
+0 0 0 rg
+BT /F2 28 Tf 54 790 Td (CHANDRAN S) Tj ET
+0 0 0 rg
+BT /F1 9.5 Tf 54 766 Td (Architect and BIM Specialist with over 7.7 years of) Tj ET
+BT /F1 9.5 Tf 54 753 Td (professional experience, including 1.5 years of) Tj ET
+BT /F1 9.5 Tf 54 740 Td (specialized Dynamo programming \(Python\). Expertise in) Tj ET
+BT /F1 9.5 Tf 54 727 Td (Revit \(Architecture, Structure, MEP\) and computational) Tj ET
+BT /F1 9.5 Tf 54 714 Td (design, delivering automation solutions.) Tj ET
+0.17 0.37 0.54 rg
+BT /F2 11 Tf 54 690 Td (EXPERIENCE) Tj ET
+0 0 0 rg
+BT /F2 9.5 Tf 54 675 Td (Studio Schicketanz, Bangalore -- Architectural Job Captain) Tj ET
+0.35 0.35 0.35 rg
+BT /F2 7.5 Tf 54 664 Td (DEC 2022 - PRESENT) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 54 652 Td (Lead Revit modelling and production of construction) Tj ET
+BT /F1 9 Tf 54 640 Td (documentation \(LOD 300-400\) for luxury residential projects.) Tj ET
+BT /F1 9 Tf 54 628 Td (Delivered full construction support and documentation for 4+) Tj ET
+BT /F1 9 Tf 54 616 Td (high-class residences in Carmel-by-the-Sea, CA.) Tj ET
+0 0 0 rg
+BT /F2 9.5 Tf 54 602 Td (Jarinam Parallel Space, Bangalore -- Architect) Tj ET
+0.35 0.35 0.35 rg
+BT /F2 7.5 Tf 54 591 Td (DEC 2021 - DEC 2022) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 54 579 Td (Produced detailed construction documentation and coordinated) Tj ET
+BT /F1 9 Tf 54 567 Td (with consultants for mid-size projects. Created Revit models) Tj ET
+BT /F1 9 Tf 54 555 Td (\(LOD 300-350\) for residential and commercial projects.) Tj ET
+0 0 0 rg
+BT /F2 9.5 Tf 54 541 Td (Pinnacle Technology Services, Hyderabad -- Revit Jr. Modeller) Tj ET
+0.35 0.35 0.35 rg
+BT /F2 7.5 Tf 54 530 Td (JUL 2021 - DEC 2021) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 54 518 Td (Delivered BIM services for international clients \(Netherlands) Tj ET
+BT /F1 9 Tf 54 506 Td (housing projects\). Developed coordinated Revit models and) Tj ET
+BT /F1 9 Tf 54 494 Td (ensured quality compliance.) Tj ET
+0 0 0 rg
+BT /F2 9.5 Tf 54 480 Td (Neural Design & Constructions \(P\) Ltd, Madurai -- Architect) Tj ET
+0.35 0.35 0.35 rg
+BT /F2 7.5 Tf 54 469 Td (JUN 2019 - JUN 2021) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 54 457 Td (Delivered architectural design and BIM coordination for) Tj ET
+BT /F1 9 Tf 54 445 Td (residential and commercial projects.) Tj ET
+0 0 0 rg
+BT /F2 9.5 Tf 54 431 Td (Freelance Architect, Madurai -- Architect) Tj ET
+0.35 0.35 0.35 rg
+BT /F2 7.5 Tf 54 420 Td (SEP 2017 - JUN 2019) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 54 408 Td (Managed residential and public projects concept design,) Tj ET
+BT /F1 9 Tf 54 396 Td (development, procurement, and supervision.) Tj ET
+0 0 0 rg
+BT /F2 9 Tf 390 790 Td (LinkedIn:) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 390 778 Td (www.linkedin.com/in/ar-chandr) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 390 767 Td (an-shanmugam-421b7b149) Tj ET
+0 0 0 rg
+BT /F2 9 Tf 390 752 Td (Bangalore | KA | India) Tj ET
+0 0 0 rg
+BT /F2 9 Tf 390 738 Td (+91 7904053633) Tj ET
+0 0 0 rg
+BT /F2 9 Tf 390 724 Td (7904053633CR@GMAIL.COM) Tj ET
+0.17 0.37 0.54 rg
+BT /F2 11 Tf 390 696 Td (SKILLS) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 390 682 Td (Dynamo \(Python) Tj ET
+BT /F1 9 Tf 390 671 Td (scripting,
+Revit) Tj ET
+BT /F1 9 Tf 390 660 Td (automation\)) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 390 651 Td (Python \(custom) Tj ET
+BT /F1 9 Tf 390 640 Td (nodes/logic\),
+C# \(basic) Tj ET
+BT /F1 9 Tf 390 629 Td (Revit API\)) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 390 620 Td (Autodesk Revit \(Arch,) Tj ET
+BT /F1 9 Tf 390 609 Td (Struct,
+MEP, LOD 300-400\)) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 390 600 Td (Computational) Tj ET
+BT /F1 9 Tf 390 589 Td (geometry
+\(Rhino &) Tj ET
+BT /F1 9 Tf 390 578 Td (Grasshopper\)) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 390 569 Td (AutoCAD, SketchUp &) Tj ET
+BT /F1 9 Tf 390 558 Td (V-Ray,
+Lumion, 3ds Max) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 390 549 Td (Adobe Photoshop,) Tj ET
+BT /F1 9 Tf 390 538 Td (InDesign,
+Microsoft) Tj ET
+BT /F1 9 Tf 390 527 Td (Office) Tj ET
+0.17 0.37 0.54 rg
+BT /F2 11 Tf 390 503 Td (LANGUAGES) Tj ET
+0 0 0 rg
+BT /F1 9 Tf 390 488 Td (English, Tamil) Tj ET
 endstream
 endobj
 5 0 obj
@@ -89,80 +118,114 @@ endobj
 << /Type /Page /Parent 2 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /MediaBox [0 0 595.28 841.89] /Contents 8 0 R >>
 endobj
 8 0 obj
-<< /Length 3534 >>
+<< /Length 2968 >>
 stream
-BT /F2 14 Tf 54 790 Td (CHANDRAN S) Tj ET
-BT /F1 9.5 Tf 54 776 Td (Dynamo Programmer | Revit & BIM Specialist -- Continued) Tj ET
-0.5 w 0.2 G 54 768 m 541.28 768 l S 0 G
-BT /F2 11 Tf 54 746 Td (PROFESSIONAL EXPERIENCE \(Continued\)) Tj ET
-BT /F2 10 Tf 54 738 Td (Revit Jr. Modeller) Tj ET
-BT /F1 9.5 Tf 150 738 Td (-- Pinnacle Technology Services, Hyderabad) Tj ET
-BT /F2 9.5 Tf 420 738 Td (Jul 2021 - Dec 2021 | 6 mos) Tj ET
-BT /F2 9.5 Tf 60 725 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 725 Td (Projects - Client- Netherland Housing Bim service) Tj ET
-BT /F2 10 Tf 54 707 Td (Architect) Tj ET
-BT /F1 9.5 Tf 110 707 Td (-- Neural Design & Constructions \(P\) Ltd, Madurai) Tj ET
-BT /F2 9.5 Tf 450 707 Td (Jun 2019 - Jun 2021 | 2 yrs) Tj ET
-BT /F2 9.5 Tf 60 694 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 694 Td (Delivered BIM services for international clients \(Netherlands housing projects\).) Tj ET
-BT /F2 9.5 Tf 60 681 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 681 Td (Developed coordinated Revit models and ensured quality compliance with client standards.) Tj ET
-BT /F2 10 Tf 54 663 Td (Freelance Architect) Tj ET
-BT /F1 9.5 Tf 160 663 Td (-- Madurai) Tj ET
-BT /F2 9.5 Tf 450 663 Td (Sep 2017 - Jun 2019 | 1 yr 9 mos) Tj ET
-BT /F2 9.5 Tf 60 650 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 650 Td (Managed residential and public projects -- concept design, development, procurement, and supervision.) Tj ET
-BT /F2 9.5 Tf 60 637 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 637 Td (star palms, Banaswadi, Bengaluru) Tj ET
-BT /F2 9.5 Tf 60 624 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 624 Td (Commercial complex, 100ft road, Bengaluru) Tj ET
-BT /F2 11 Tf 54 602 Td (SELECTED PROJECTS & HIGHLIGHTS) Tj ET
-BT /F2 9.5 Tf 60 581 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 581 Td (4 High-end Residences -- Carmel-by-the-Sea, California \(full BIM &) Tj ET
-BT /F1 9.5 Tf 70 568 Td (documentation support, Dynamo automation\)) Tj ET
-BT /F2 9.5 Tf 60 555 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 555 Td (Star Palms -- Banaswadi, Bengaluru \(Luxury residential project\)) Tj ET
-BT /F2 9.5 Tf 60 542 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 542 Td (Commercial Complex -- 100FT Road, Bengaluru) Tj ET
-BT /F2 9.5 Tf 60 529 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 529 Td (PHC -- Chennai \(Public Health Centre\)) Tj ET
-BT /F2 9.5 Tf 60 516 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 516 Td (Andian Nagar Row House -- Sathangudi, Madurai) Tj ET
-BT /F2 9.5 Tf 60 503 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 503 Td (Hafeez Contractor Apartments -- Pune \(R16 & R7\)) Tj ET
-BT /F2 9.5 Tf 60 490 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 490 Td (Lane Cove Warehouse -- Australia \(BIM package\)) Tj ET
-BT /F2 9.5 Tf 60 477 Td (\225) Tj ET
-BT /F1 9.5 Tf 70 477 Td (Dubai Warehouse \(International BIM project\)) Tj ET
-BT /F2 11 Tf 54 455 Td (EDUCATION) Tj ET
-BT /F2 9.5 Tf 54 447 Td (Master of Architecture) Tj ET
-BT /F1 9.5 Tf 165 447 Td (-- Meenakshi College of Engineering, Chennai) Tj ET
-BT /F2 9.5 Tf 400 447 Td (2017 - 2019) Tj ET
-BT /F1 9.5 Tf 480 447 Td (CGPA: 7.55/10) Tj ET
-BT /F2 9.5 Tf 54 433 Td (Bachelor of Architecture) Tj ET
-BT /F1 9.5 Tf 170 433 Td (-- Tamilnadu School of Architecture, Coimbatore) Tj ET
-BT /F2 9.5 Tf 400 433 Td (2012 - 2017) Tj ET
-BT /F1 9.5 Tf 480 433 Td (CGPA: 7.02/10) Tj ET
-BT /F2 11 Tf 54 411 Td (ADDITIONAL) Tj ET
-BT /F1 9.5 Tf 54 403 Td (Languages: English | Tamil) Tj ET
-BT /F1 9.5 Tf 54 389 Td (Total Experience: ~8+ years \(1.5 years dedicated Dynamo + Python experience\)) Tj ET
-BT /F1 9.5 Tf 54 375 Td (Availability: Immediate/As per notice period) Tj ET
-BT /F1 9.5 Tf 54 361 Td (References: Available on request) Tj ET
+0.17 0.37 0.54 rg
+BT /F2 11 Tf 54 790 Td (EDUCATION) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 54 775 Td (Meenakshi College of Engineering, Chennai -- Master of Architecture) Tj ET
+0.35 0.35 0.35 rg
+BT /F1 9 Tf 54 762 Td (2017 - 2019  |  CGPA: 7.55/10) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 54 748 Td (Tamilnadu School of Architecture, Coimbatore -- Bachelor of Architecture) Tj ET
+0.35 0.35 0.35 rg
+BT /F1 9 Tf 54 735 Td (2012 - 2017  |  CGPA: 7.02/10) Tj ET
+0.17 0.37 0.54 rg
+BT /F2 11 Tf 54 711 Td (PROJECTS) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 54 695 Td (Featured Projects) Tj ET
+BT /F2 9.5 Tf 60 677 Td (\225) Tj ET
+BT /F1 9.5 Tf 70 677 Td (4 High-end Residences, Carmel-by-the-Sea, CA) Tj ET
+BT /F2 9.5 Tf 60 665 Td (\225) Tj ET
+BT /F1 9.5 Tf 70 665 Td (Star Palms, Banaswadi, Bengaluru) Tj ET
+BT /F2 9.5 Tf 60 653 Td (\225) Tj ET
+BT /F1 9.5 Tf 70 653 Td (Commercial Complex, 100FT Road, Bengaluru) Tj ET
+BT /F2 9.5 Tf 60 641 Td (\225) Tj ET
+BT /F1 9.5 Tf 70 641 Td (PHC, Chennai) Tj ET
+BT /F2 9.5 Tf 60 629 Td (\225) Tj ET
+BT /F1 9.5 Tf 70 629 Td (Pandian Nagar Row House, Madurai) Tj ET
+BT /F2 9.5 Tf 60 617 Td (\225) Tj ET
+BT /F1 9.5 Tf 70 617 Td (Hafeez Contractor Apartments, Pune) Tj ET
+BT /F2 9.5 Tf 60 605 Td (\225) Tj ET
+BT /F1 9.5 Tf 70 605 Td (Lane Cove Warehouse, Australia) Tj ET
+BT /F2 9.5 Tf 60 593 Td (\225) Tj ET
+BT /F1 9.5 Tf 70 593 Td (Dubai Warehouse) Tj ET
+0.17 0.37 0.54 rg
+BT /F2 11 Tf 54 571 Td (KEY PROJECTS & DELIVERABLES) Tj ET
+0 0 0 rg
+BT /F2 10 Tf 54 555 Td (Project Lead & Delivery:) Tj ET
+BT /F2 9.5 Tf 60 540 Td (\225) Tj ET
+BT /F2 9.5 Tf 70 540 Td (Dolgov Main House \(SS-002\), Palo Alto, CA: ) Tj ET
+BT /F1 9.5 Tf 280.70000000000005 540 Td (Led full BIM modeling, detailing,) Tj ET
+BT /F1 9.5 Tf 70 528 Td (and permit packages for residential remodel.) Tj ET
+BT /F2 9.5 Tf 60 513 Td (\225) Tj ET
+BT /F2 9.5 Tf 70 513 Td (Cappo Scenic \(SS-001\), Monterey County, CA: ) Tj ET
+BT /F1 9.5 Tf 285.6 513 Td (Managed lifecycle delivery,) Tj ET
+BT /F1 9.5 Tf 70 501 Td (including planning approvals, permits, and contractor coordination for) Tj ET
+BT /F1 9.5 Tf 70 489 Td (multi-component remodel.) Tj ET
+BT /F2 9.5 Tf 60 474 Td (\225) Tj ET
+BT /F2 9.5 Tf 70 474 Td (Charl Cherry Art Studio \(SS-008\), Monterey County, CA: ) Tj ET
+BT /F1 9.5 Tf 339.5 474 Td (Led ADA compliance,) Tj ET
+BT /F1 9.5 Tf 70 462 Td (permit submissions, and MEP coordination for commercial construction.) Tj ET
+BT /F2 9.5 Tf 60 447 Td (\225) Tj ET
+BT /F2 9.5 Tf 70 447 Td (Moss Residence \(SS-006\) & Yeung Remodel \(SS-005\): ) Tj ET
+BT /F1 9.5 Tf 315.0 447 Td (Directed design,) Tj ET
+BT /F1 9.5 Tf 70 435 Td (coordination, and permit packages for historical building remodels.) Tj ET
+BT /F2 9.5 Tf 60 420 Td (\225) Tj ET
+BT /F1 9.5 Tf 70 420 Td (McCarthy Residence \(SS-014\), Knoop 250 \(SS-004\), & Weiss Emerald Bay) Tj ET
+BT /F1 9.5 Tf 70 408 Td (\(SS-012\): Spearheaded BIM modeling, documentation, and coordination for) Tj ET
+BT /F1 9.5 Tf 70 396 Td (residential projects.) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /MediaBox [0 0 595.28 841.89] /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 1702 >>
+stream
+0 0 0 rg
+BT /F2 10 Tf 54 790 Td (Technical Collaboration & Team Support:) Tj ET
+BT /F2 9.5 Tf 60 775 Td (\225) Tj ET
+BT /F1 9.5 Tf 70 775 Td (Lunquist Residence \(SS-010\), Kani Remodel \(SS-003\), Connors Residence) Tj ET
+BT /F1 9.5 Tf 70 763 Td (\(SS-009\), Bayview \(SS-013\), Kartalis Residence \(SS-011\), Nelson's Residence) Tj ET
+BT /F1 9.5 Tf 70 751 Td (\(SS-007\), & Lot 67 \(SS-015\): Supported CD production, Revit modeling \(LOD) Tj ET
+BT /F1 9.5 Tf 70 739 Td (300-350\), and multi-discipline coordination.) Tj ET
+0.17 0.37 0.54 rg
+BT /F2 11 Tf 54 709 Td (BIM AUTOMATION SUITE: CS REVIT LABS) Tj ET
+0.35 0.35 0.35 rg
+BT /F1 9.5 Tf 54 694 Td (Developed using C# \(.NET Framework 4.8\), Revit API, WPF/XAML, Python, and Google Gemini API.) Tj ET
+BT /F2 9.5 Tf 60 666 Td (\225) Tj ET
+BT /F2 9.5 Tf 70 666 Td (Model Management: ) Tj ET
+BT /F1 9.5 Tf 158.2 666 Td (Automated backup, batch worksets, and coordination sets.) Tj ET
+BT /F2 9.5 Tf 60 648 Td (\225) Tj ET
+BT /F2 9.5 Tf 70 648 Td (Documentation & Annotation: ) Tj ET
+BT /F1 9.5 Tf 207.20000000000002 648 Td (Bulk-generated floor plans/elevations) Tj ET
+BT /F1 9.5 Tf 70 636 Td (\(SheetCraft\), Keynote/Detail browsers, and auto-tagging.) Tj ET
+BT /F2 9.5 Tf 60 618 Td (\225) Tj ET
+BT /F2 9.5 Tf 70 618 Td (QA/QC & Graphics: ) Tj ET
+BT /F1 9.5 Tf 158.2 618 Td (Graphic QC checks, project spell check via LLM integration,) Tj ET
+BT /F1 9.5 Tf 70 606 Td (and line style organization.) Tj ET
+BT /F2 9.5 Tf 60 588 Td (\225) Tj ET
+BT /F2 9.5 Tf 70 588 Td (MEP & Developer Tools: ) Tj ET
+BT /F1 9.5 Tf 182.7 588 Td (Appliance placement automation, batch export sets, and) Tj ET
+BT /F1 9.5 Tf 70 576 Td (code sandbox for live scripting.) Tj ET
 endstream
 endobj
 xref
-0 9
+0 11
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
-0000000121 00000 n 
-0000000263 00000 n 
-0000005182 00000 n 
-0000005252 00000 n 
-0000005327 00000 n 
-0000005469 00000 n 
+0000000127 00000 n 
+0000000269 00000 n 
+0000004260 00000 n 
+0000004330 00000 n 
+0000004405 00000 n 
+0000004547 00000 n 
+0000007567 00000 n 
+0000007710 00000 n 
 trailer
-<< /Size 9 /Root 1 0 R >>
+<< /Size 11 /Root 1 0 R >>
 startxref
-9055
+9465
 %%EOF
