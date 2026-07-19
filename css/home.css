@@ -496,7 +496,7 @@ section {
   box-shadow: var(--shadow-sm);
 }
 .labs-feature-visual {
-  background: rgba(4, 4, 6, 0.4);
+  background: var(--visual-bg);
   border: 1px solid var(--border-dim);
   border-radius: var(--radius-md);
   padding: 2.2rem;

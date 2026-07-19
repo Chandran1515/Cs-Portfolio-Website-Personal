@@ -19,6 +19,10 @@
   --green: #00FF88;
   --blue: #00F0FF;
 
+  --nav-bg: rgba(4, 4, 6, 0.75);
+  --nav-bg-scrolled: rgba(4, 4, 6, 0.92);
+  --visual-bg: rgba(4, 4, 6, 0.4);
+
   --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'Fira Code', monospace;
@@ -31,6 +35,45 @@
   --shadow-lg: 0 20px 80px rgba(0,0,0,0.8);
   --glow-crimson: 0 0 15px rgba(255, 51, 102, 0.35);
   --glow-violet: 0 0 15px rgba(143, 0, 255, 0.35);
+}
+
+/* Theme Overrides */
+:root.theme-morning {
+  --bg: #FFFFFF;
+  --surface: #F8F9FA;
+  --surface-2: #E9ECEF;
+  --text: #1A1A1A;
+  --text-muted: #4A4A4A;
+  --text-dim: #7A7A7A;
+  --border: #E2E8F0;
+  --border-dim: rgba(0, 0, 0, 0.08);
+  --nav-bg: rgba(255, 255, 255, 0.75);
+  --nav-bg-scrolled: rgba(255, 255, 255, 0.92);
+  --visual-bg: rgba(0, 0, 0, 0.03);
+  --gold: #A06D1C;
+  --green: #15803D;
+  --blue: #1D4ED8;
+  --shadow-sm: 0 4px 20px rgba(0,0,0,0.06);
+  --shadow-lg: 0 20px 80px rgba(0,0,0,0.1);
+}
+
+:root.theme-afternoon {
+  --bg: #F0F2F5;
+  --surface: #E4E6EB;
+  --surface-2: #D8DADF;
+  --text: #1A1A1A;
+  --text-muted: #4A4A4A;
+  --text-dim: #7A7A7A;
+  --border: #CCD0D5;
+  --border-dim: rgba(0, 0, 0, 0.08);
+  --nav-bg: rgba(240, 242, 245, 0.75);
+  --nav-bg-scrolled: rgba(240, 242, 245, 0.92);
+  --visual-bg: rgba(0, 0, 0, 0.03);
+  --gold: #A06D1C;
+  --green: #15803D;
+  --blue: #1D4ED8;
+  --shadow-sm: 0 4px 20px rgba(0,0,0,0.06);
+  --shadow-lg: 0 20px 80px rgba(0,0,0,0.1);
 }
 
 html { 
@@ -69,16 +112,16 @@ nav {
   z-index: 100;
   padding: 1.2rem 3rem;
   display: flex; align-items: center; justify-content: space-between;
-  background: rgba(4, 4, 6, 0.75);
+  background: var(--nav-bg);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   border-bottom: 1px solid var(--border-dim);
   transition: padding 0.3s, background 0.3s;
 }
 nav.scrolled {
-  background: rgba(4, 4, 6, 0.92);
+  background: var(--nav-bg-scrolled);
   padding: 0.9rem 3rem;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+  box-shadow: var(--shadow-sm);
 }
 
 .nav-logo {

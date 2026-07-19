@@ -13,6 +13,16 @@
   
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/home.css" />
+  <script>
+    (function() {
+      const hour = new Date().getHours();
+      if (hour >= 6 && hour < 12) {
+        document.documentElement.classList.add('theme-morning');
+      } else if (hour >= 12 && hour < 18) {
+        document.documentElement.classList.add('theme-afternoon');
+      }
+    })();
+  </script>
 </head>
 <body>
 
@@ -327,6 +337,7 @@
   <script src="js/main.js" defer></script>
   <script src="js/particles.js" defer></script>
   <script src="js/linkedin-feed.js" defer></script>
+  <script src="js/analytics.js" defer></script>
   <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>

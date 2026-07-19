@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Analytics Dashboard | Ar. Chandran Shanmugam</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/global.css">
+  
+  <style>
+    :root {
+      --analytics-accent: #00F0FF;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      padding: 6rem 2rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .db-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .db-title h1 {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .db-title p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .db-actions {
+      display: flex;
+      gap: 1rem;
+    }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .kpi-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+    }
+    .kpi-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 4px; height: 100%;
+      background: var(--crimson);
+    }
+    .kpi-card.accent::after {
+      background: var(--analytics-accent);
+    }
+    .kpi-label {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-family: var(--font-ui);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .kpi-val {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--text);
+    }
+    
+    .db-layout {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    @media (max-width: 900px) {
+      .db-layout { grid-template-columns: 1fr; }
+    }
+    
+    .card-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .card-block-title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-dim);
+      padding-bottom: 0.8rem;
+      color: var(--text);
+    }
+    
+    /* Referral Chart */
+    .ref-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.2rem;
+      gap: 1rem;
+    }
+    .ref-label {
+      width: 140px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .ref-bar-bg {
+      flex-grow: 1;
+      height: 12px;
+      background: var(--surface-2);
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+    }
+    .ref-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--crimson) 0%, var(--analytics-accent) 100%);
+      border-radius: 6px;
+      width: 0%;
+      transition: width 1s ease-out;
+    }
+    .ref-count {
+      width: 45px;
+      text-align: right;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* Logs Table */
+    .table-container {
+      overflow-x: auto;
+      margin-top: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    th, td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border-dim);
+      font-size: 0.88rem;
+    }
+    th {
+      font-family: var(--font-ui);
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+    td {
+      color: var(--text);
+    }
+    td.mono {
+      font-family: var(--font-mono);
+    }
+    .badge-source {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--text-muted);
+      font-family: var(--font-ui);
+    }
+  </style>
+
+  <script>
+    // Inline theme detector to prevent theme flashes
+    (function() {
+      const hour = new Date().getHours();
+      if (hour >= 6 && hour < 12) {
+        document.documentElement.classList.add('theme-morning');
+      } else if (hour >= 12 && hour < 18) {
+        document.documentElement.classList.add('theme-afternoon');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Ar. Chandran <span>Shanmugam</span></a>
+    <div class="nav-links">
+      <a href="index.html#services">Software Tools</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html#contact" class="nav-cta">Get In Touch</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="db-header">
+    <div class="db-title">
+      <h1>Visitor Traffic Dashboard</h1>
+      <p>Real-time client-side tracking logs, traffic channels, and session metrics.</p>
+    </div>
+    <div class="db-actions">
+      <button onclick="clearLogs()" class="btn-ghost" style="padding: 0.7rem 1.4rem; border-radius: 40px; font-size: 0.85rem; font-weight: 600; cursor: pointer;">Clear Local Data</button>
+      <a href="index.html" class="btn-primary" style="padding: 0.7rem 1.4rem; border-radius: 40px; font-size: 0.85rem; font-weight: 600; text-decoration: none;">← Back to Site</a>
+    </div>
+  </div>
+
+  <!-- KPI SUMMARY -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">Total Visits (Hits)</div>
+      <div id="kpi-hits" class="kpi-val">0</div>
+    </div>
+    <div class="kpi-card accent">
+      <div class="kpi-label">Unique Sessions</div>
+      <div id="kpi-sessions" class="kpi-val">0</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Avg. Active Time</div>
+      <div id="kpi-duration" class="kpi-val">0s</div>
+    </div>
+    <div class="kpi-card accent">
+      <div class="kpi-label">Top Referral Channel</div>
+      <div id="kpi-channel" class="kpi-val" style="font-size: 1.6rem; padding-top: 0.5rem; word-break: break-all;">Direct</div>
+    </div>
+  </div>
+
+  <!-- DETAILS GRID -->
+  <div class="db-layout">
+    
+    <!-- LEFT: RECENT VISITORS LOG -->
+    <div class="card-block">
+      <div class="card-block-title">Live Log Stream</div>
+      <div class="table-container">
+        <table id="logs-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Page</th>
+              <th>Channel</th>
+              <th>Duration Spent</th>
+            </tr>
+          </thead>
+          <tbody id="logs-tbody">
+            <!-- Populated via script -->
+          </tbody>
+        </table>
+        <div id="empty-log-state" class="empty-state" style="display: none;">
+          No visitor log data captured yet. Open the website pages in other tabs to simulate traffic logs!
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHANNELS & PROD HELP -->
+    <div style="display: flex; flex-direction: column; gap: 2rem;">
+      
+      <!-- Referral Channels Chart -->
+      <div class="card-block">
+        <div class="card-block-title">Acquisition Channels</div>
+        <div id="channels-container">
+          <!-- Populated via script -->
+        </div>
+      </div>
+
+      <!-- Cloud Integration Instructions -->
+      <div class="card-block" style="background: var(--surface-2); border-color: var(--crimson);">
+        <div class="card-block-title" style="color: var(--crimson);">Production Analytics</div>
+        <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 1rem;">
+          This dashboard displays local visitor logs stored in your browser. 
+          To collect real-time data from global recruiters and clients on your live website, configure these options:
+        </p>
+        <ul style="font-size: 0.85rem; line-height: 1.6; padding-left: 1.2rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.8rem;">
+          <li>
+            <strong>Option A: Google Analytics (GA4)</strong><br>
+            Paste your GA4 Measurement ID in <code>js/analytics.js</code> to populate direct dashboard tracking inside your Google Analytics console.
+          </li>
+          <li>
+            <strong>Option B: Serverless Database Webhook</strong><br>
+            Uncomment the <code>sendBeacon</code> function in <code>js/analytics.js</code> to stream real-time visit JSON records directly to a database catalog (like Supabase, Firebase, or Formspree).
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    const STORAGE_KEY = 'portfolio_analytics_logs';
+
+    function loadDashboardData() {
+      let logs = [];
+      try {
+        logs = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+      } catch (e) {
+        logs = [];
+      }
+
+      // Sort logs descending by lastActive time
+      logs.sort((a, b) => new Date(b.lastActive) - new Date(a.lastActive));
+
+      // Calculate stats
+      const totalHits = logs.length;
+      
+      // Unique sessions
+      const sessions = new Set(logs.map(l => l.sessionId));
+      const uniqueSessions = sessions.size;
+
+      // Avg. Time Spent
+      // Group by session ID to get total time spent by session, then average
+      const sessionTimes = {};
+      logs.forEach(l => {
+        if (!sessionTimes[l.sessionId]) {
+          sessionTimes[l.sessionId] = 0;
+        }
+        sessionTimes[l.sessionId] += l.timeSpent || 0;
+      });
+
+      const totalTimes = Object.values(sessionTimes);
+      const avgDuration = totalTimes.length > 0 
+        ? Math.round(totalTimes.reduce((a, b) => a + b, 0) / totalTimes.length) 
+        : 0;
+
+      // Top Channel
+      const channels = {};
+      logs.forEach(l => {
+        const src = l.source || 'Direct Link';
+        channels[src] = (channels[src] || 0) + 1;
+      });
+
+      let topChannel = 'Direct Link';
+      let maxChannelCount = 0;
+      Object.keys(channels).forEach(ch => {
+        if (channels[ch] > maxChannelCount) {
+          maxChannelCount = channels[ch];
+          topChannel = ch;
+        }
+      });
+
+      // Update KPI HTML
+      document.getElementById('kpi-hits').textContent = totalHits;
+      document.getElementById('kpi-sessions').textContent = uniqueSessions;
+      
+      // Format Duration text
+      let durText = avgDuration + 's';
+      if (avgDuration >= 60) {
+        const mins = Math.floor(avgDuration / 60);
+        const secs = avgDuration % 60;
+        durText = mins + 'm ' + secs + 's';
+      }
+      document.getElementById('kpi-duration').textContent = durText;
+      document.getElementById('kpi-channel').textContent = topChannel;
+
+      // Update Logs Table
+      const tbody = document.getElementById('logs-tbody');
+      tbody.innerHTML = '';
+      
+      if (logs.length === 0) {
+        document.getElementById('logs-table').style.display = 'none';
+        document.getElementById('empty-log-state').style.display = 'block';
+      } else {
+        document.getElementById('logs-table').style.display = '';
+        document.getElementById('empty-log-state').style.display = 'none';
+        
+        logs.forEach(l => {
+          const tr = document.createElement('tr');
+          
+          // Time
+          const timeTd = document.createElement('td');
+          timeTd.className = 'mono';
+          timeTd.style.fontSize = '0.8rem';
+          try {
+            timeTd.textContent = new Date(l.lastActive).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+          } catch(e) {
+            timeTd.textContent = l.lastActive;
+          }
+          
+          // Page
+          const pageTd = document.createElement('td');
+          pageTd.textContent = l.pagePath === '' ? 'index.html' : l.pagePath;
+          
+          // Channel
+          const sourceTd = document.createElement('td');
+          const span = document.createElement('span');
+          span.className = 'badge-source';
+          span.textContent = l.source || 'Direct Link';
+          sourceTd.appendChild(span);
+          
+          // Duration
+          const durTd = document.createElement('td');
+          durTd.className = 'mono';
+          let itemSecs = l.timeSpent || 0;
+          if (itemSecs >= 60) {
+            durTd.textContent = Math.floor(itemSecs / 60) + 'm ' + (itemSecs % 60) + 's';
+          } else {
+            durTd.textContent = itemSecs + 's';
+          }
+          
+          tr.appendChild(timeTd);
+          tr.appendChild(pageTd);
+          tr.appendChild(sourceTd);
+          tr.appendChild(durTd);
+          tbody.appendChild(tr);
+        });
+      }
+
+      // Update Referral Channels Chart
+      const chartContainer = document.getElementById('channels-container');
+      chartContainer.innerHTML = '';
+
+      const totalChannels = Object.values(channels).reduce((a, b) => a + b, 0);
+      
+      // Sort channels descending
+      const sortedChannels = Object.keys(channels).sort((a, b) => channels[b] - channels[a]);
+
+      if (sortedChannels.length === 0) {
+        chartContainer.innerHTML = '<div style="color:var(--text-muted); font-size:0.88rem; text-align:center; padding: 2rem 0;">No traffic source data recorded.</div>';
+      } else {
+        sortedChannels.forEach(ch => {
+          const count = channels[ch];
+          const pct = totalChannels > 0 ? Math.round((count / totalChannels) * 100) : 0;
+          
+          const row = document.createElement('div');
+          row.className = 'ref-row';
+          
+          const label = document.createElement('div');
+          label.className = 'ref-label';
+          label.textContent = ch;
+          
+          const barBg = document.createElement('div');
+          barBg.className = 'ref-bar-bg';
+          
+          const barFill = document.createElement('div');
+          barFill.className = 'ref-bar-fill';
+          // Triggers transition animation
+          setTimeout(() => {
+            barFill.style.width = pct + '%';
+          }, 50);
+          
+          barBg.appendChild(barFill);
+          
+          const countDiv = document.createElement('div');
+          countDiv.className = 'ref-count';
+          countDiv.textContent = count;
+          
+          row.appendChild(label);
+          row.appendChild(barBg);
+          row.appendChild(countDiv);
+          chartContainer.appendChild(row);
+        });
+      }
+    }
+
+    function clearLogs() {
+      if (confirm("Are you sure you want to clear your local visitor logs?")) {
+        localStorage.removeItem(STORAGE_KEY);
+        loadDashboardData();
+      }
+    }
+
+    // Refresh every 5 seconds
+    setInterval(loadDashboardData, 5000);
+    
+    // Initial load
+    window.onload = loadDashboardData;
+  </script>
+</body>
+</html>
