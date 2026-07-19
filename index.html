@@ -44,7 +44,7 @@
 
   <!-- 2. CREDIBILITY STRIP -->
   <div class="cred-strip reveal">
-    <div class="cred-item"><span class="cred-icon">✦</span> <span class="hl">8+</span> Years AEC Experience</div>
+    <div class="cred-item"><span class="cred-icon">✦</span> <span class="hl dyn-exp-total">8+</span> Years AEC Experience</div>
     <div class="cred-item"><span class="cred-icon">✦</span> <span class="hl">C# / .NET</span> Desktop APIs</div>
     <div class="cred-item"><span class="cred-icon">✦</span> <span class="hl">Python / MCP</span> AI Bridges</div>
     <div class="cred-item"><span class="cred-icon">✦</span> Revit + AutoCAD Dev</div>
@@ -125,6 +125,26 @@
     </div>
   </section>
 
+  <!-- 4.5. LATEST DEMOS & VIDEOS (LINKEDIN FEED) -->
+  <section id="demos" class="reveal" style="border-top: 1px solid var(--border-dim); padding-top: 5rem; padding-bottom: 5rem;">
+    <div class="section-header reveal" style="text-align: center; margin-bottom: 4rem;">
+      <h2 class="section-title">Automation Demos in Action</h2>
+      <p class="section-sub">Latest video walks and tool recordings shared on LinkedIn.</p>
+    </div>
+    
+    <div class="demo-feed-grid reveal" id="linkedin-feed-container">
+      <div class="demo-card-placeholder">
+        <p>Connecting to LinkedIn video feed...</p>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 4rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <a href="https://www.linkedin.com/in/ar-chandran-shanmugam-421b7b149/recent-activity/all/" target="_blank" class="btn-primary" style="padding: 1.1rem 2.2rem; display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+        Follow on LinkedIn for Live Updates
+      </a>
+    </div>
+  </section>
+
   <!-- 5. WHY CLIENTS CHOOSE ME / DUAL EXPERTISE -->
   <section>
     <div class="split-layout reveal">
@@ -136,7 +156,7 @@
         <div class="feature-item"><div class="feature-icon">💬</div> Deep Revit API Domain Knowledge</div>
         <div class="feature-item"><div class="feature-icon">🎯</div> High-Performance C# Core Logic</div>
         <div class="feature-item"><div class="feature-icon">⏱️</div> Cutting-Edge AI MCP Connectors</div>
-        <div class="feature-item"><div class="feature-icon">✨</div> 8+ Years Architecture Project Insight</div>
+        <div class="feature-item"><div class="feature-icon">✨</div> <span class="dyn-exp-total">8+</span> Years Architecture Project Insight</div>
         <div class="feature-item"><div class="feature-icon">🛡️</div> Clear Cross-Discipline Communication</div>
       </div>
     </div>
@@ -145,17 +165,25 @@
   <!-- 6. ABOUT FOUNDER -->
   <section id="about" style="background: var(--surface);">
     <div class="split-layout reveal">
-      <div>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 2rem;">
         <img src="images/profile/profile_photo.png" alt="Ar. Chandran Shanmugam" class="about-img" loading="lazy" decoding="async" onerror="this.src='https://via.placeholder.com/400x500?text=Chandran+Shanmugam'">
+        
+        <!-- Live LinkedIn Badge Card Container -->
+        <div class="linkedin-badge-wrapper" style="width: 100%; max-width: 320px; display: flex; justify-content: center; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem 1rem; box-shadow: var(--shadow-sm);">
+          <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="ar-chandran-shanmugam-421b7b149">
+            <a class="LI-simple-link" href="https://in.linkedin.com/in/ar-chandran-shanmugam-421b7b149?trk=profile-badge">Ar. Chandran Shanmugam</a>
+          </div>
+        </div>
       </div>
       <div class="split-text">
         <h2 class="section-title">About Chandran</h2>
-        <p>I am Ar. Chandran Shanmugam, a registered Architect and BIM Developer with <span class="hl">8+ years</span> of total professional experience, including <span class="hl">3.5+ years in California</span> at Studio Schicketanz.</p>
+        <p>I am Ar. Chandran Shanmugam, a registered Architect and BIM Developer with <span class="hl dyn-exp-total">8+ years</span> of total professional experience. My career has focused on bridging physical architecture with software development, including <span class="hl dyn-exp-ca">3.5+ years in California</span> at Studio Schicketanz (Sep 2022 – Apr 2026) where I led BIM automation initiatives, and 3 years at a reputed Australia-based architecture firm in Bangalore, India (2019 – 2022) focusing on sustainable design detailing and automation scripting.</p>
         <p>My journey into software engineering began out of necessity. Faced with hours of manual sheet layouts, drafting, and file exporting, I started building C# automations. That evolved into writing custom plugins, integrating LLMs into BIM environments, and studying Computer Science.</p>
-        <p>Today, I build desktop plugins, WebGL 3D viewers, and custom AI tools. I focus on delivering clean, maintainable codebases that automate architectural workflows and help design teams execute at scale.</p>
+        <p>I hold a **Master of Architecture (M.Arch)** from Meenakshi College of Engineering, Chennai (Graduated 2019) and a **Bachelor of Architecture (B.Arch)** from Tamilnadu School of Architecture, Coimbatore. Today, I build high-performance desktop plugins, WebGL 3D viewers, and custom AI tools in C#/.NET and Python, delivering clean, maintainable codebases that automate architectural workflows at scale.</p>
       </div>
     </div>
   </section>
+
 
   <!-- 7. TESTIMONIALS -->
   <section>
@@ -240,5 +268,7 @@
 
   <script src="js/main.js" defer></script>
   <script src="js/particles.js" defer></script>
+  <script src="js/linkedin-feed.js" defer></script>
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>

@@ -6,12 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio — Chandran Shanmugam</title>
   <meta name="description"
-    content="13 California residential & commercial projects — Palo Alto, Monterey County, Carmel-by-the-Sea. Permitting, Construction Documents, BIM Automation." />
+    content="Dual-expertise software tools and 15 California architectural building design projects. C#/.NET desktop plugins, Python AI connectors, and permitted residential/commercial sets." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400&display=swap"
-    rel="stylesheet" />
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/portfolio.css" />
 </head>
@@ -21,6 +18,7 @@
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
+  <!-- NAVIGATION -->
   <nav>
     <a href="index.html" class="nav-logo">Ar. Chandran <span>Shanmugam</span></a>
     <div class="nav-links">
@@ -33,19 +31,21 @@
     <a href="index.html" class="nav-back">← Home</a>
   </nav>
 
+  <!-- PORTFOLIO HEADER -->
   <div class="page-header">
     <div class="page-header-bg"></div>
     <div class="page-header-grid"></div>
     <div class="page-header-content">
-      <div class="page-eyebrow">Ar. Chandran Shanmugam · <span class="hl">8+ Years AEC Experience</span> · <span class="hl">C# &amp; Python Automation</span></div>
-      <h1 class="page-title"><span class="hl">3</span> Tools.<br /><em>13 Projects.</em><br />All <span class="hl">Automated</span>.</h1>
-      <p class="page-sub">Computational Architect &amp; BIM Developer Portfolio — featuring custom C#/.NET desktop utilities, Python AI integrations, and 13 permitted California residential/commercial building design projects.</p>
+      <div class="page-eyebrow">Ar. Chandran Shanmugam · M.Arch &amp; B.Arch · <span class="hl">8+ Years Experience</span></div>
+      <h1 class="page-title"><span class="hl">Software Tools</span> &amp;<br /><em>Building Design.</em><br />All <span class="hl">Automated</span>.</h1>
+      <p class="page-sub">Computational Architect &amp; Software Engineer Portfolio — featuring production-grade C#/.NET Revit API plugins, Python AI connector bridges, and 15 permitted California residential and commercial building designs.</p>
     </div>
   </div>
 
+  <!-- STATS BAR -->
   <div class="stats-bar">
     <div class="stat-item">
-      <div class="stat-num" style="color:var(--vibrant-red)">8+</div>
+      <div class="stat-num">8+</div>
       <div class="stat-label">Years AEC Exp.</div>
     </div>
     <div class="stat-item">
@@ -53,7 +53,7 @@
       <div class="stat-label">Software Tools</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">13</div>
+      <div class="stat-num">15</div>
       <div class="stat-label">Design Projects</div>
     </div>
     <div class="stat-item">
@@ -65,75 +65,81 @@
       <div class="stat-label">AI Integration</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num" style="color:var(--vibrant-red)">100%</div>
+      <div class="stat-num">100%</div>
       <div class="stat-label">Code-Driven</div>
     </div>
   </div>
 
+  <!-- FILTER BUTTONS -->
   <div class="filters">
     <button class="filter-btn active" data-filter="all">All Work</button>
     <button class="filter-btn" data-filter="bim">Software Tools</button>
     <button class="filter-btn" data-filter="paloalto">Palo Alto</button>
     <button class="filter-btn" data-filter="monterey">Monterey County</button>
     <button class="filter-btn" data-filter="orangecounty">Orange County</button>
-    <span class="filter-count" id="fc">Showing all 3 software tools + 13 projects</span>
+    <span class="filter-count" id="fc">Showing all 3 software tools + 15 projects</span>
   </div>
 
+  <!-- PORTFOLIO PROJECTS GRID SECTION -->
   <div class="portfolio-section">
 
     <!-- BIM TOOLS -->
-    <div class="spacer"></div>
     <div class="category-label" id="g-bim">// BIM Automation & Software Tools</div>
     <div class="bim-grid">
       <div class="bim-card">
         <div class="bim-num">CS–001</div>
-        <div class="bim-video-area">
-          <!--
-          ADD VIDEO: Replace this div with:
-          <iframe width="100%" height="170" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-          frameborder="0" allowfullscreen style="position:relative;z-index:2;border:none;"></iframe>
-        -->
-          <div class="bim-video-label">Paste YouTube embed here<br />Upload demo to YouTube → Share → Embed<br />Copy
-            the iframe code</div>
+        <div class="bim-video-area" data-tool-id="sheetcraft">
+          <div class="bim-video-label">Demo Video Coming Soon</div>
         </div>
         <div class="bim-name">SheetCraft</div>
         <div class="bim-sub">Autodesk App Store · Sheet Automation</div>
-        <p class="bim-desc">Automates sheet creation, numbering, and titleblock population in Revit. Eliminates manual
-          setup across large CD sets.</p>
-        <div class="bim-tech"><span class="bim-tag">C# / .NET</span><span class="bim-tag">Revit API</span><span
-            class="bim-tag">WPF UI</span></div>
-        <span class="badge badge-red" style="margin-top:0.8rem;display:inline-flex;"><span
-            class="bdot pulse"></span>App Store Review</span>
+        <p class="bim-desc">Automates sheet creation, numbering, view placement, and titleblock population in Autodesk Revit. Eliminates manual setup across large CD sets.</p>
+        <div class="bim-tech">
+          <span class="bim-tag">C# / .NET</span>
+          <span class="bim-tag">Revit API</span>
+          <span class="bim-tag">WPF UI</span>
+        </div>
+        <span class="badge badge-red" style="margin-top:0.8rem;display:inline-flex;">
+          <span class="bdot pulse"></span>App Store Review
+        </span>
       </div>
+
       <div class="bim-card">
         <div class="bim-num">CS–002</div>
-        <div class="bim-video-area">
-          <div class="bim-video-label">Paste YouTube embed here<br />Upload demo to YouTube → Share → Embed<br />Copy
-            the iframe code</div>
+        <div class="bim-video-area" data-tool-id="aiconnector">
+          <div class="bim-video-label">Demo Video Coming Soon</div>
         </div>
         <div class="bim-name">AI Connector</div>
         <div class="bim-sub">MCP Bridge · Claude AI ↔ Revit</div>
-        <p class="bim-desc">Connects Claude AI to Revit via C# HTTP server and Python MCP. Natural language BIM commands
-          — query models, create elements, automate documentation.</p>
-        <div class="bim-tech"><span class="bim-tag">C#</span><span class="bim-tag">Python MCP</span><span
-            class="bim-tag">Claude AI</span><span class="bim-tag">Revit API</span></div>
-        <span class="badge badge-green" style="margin-top:0.8rem;display:inline-flex;"><span class="bdot"></span>Live —
-          Internal</span>
+        <p class="bim-desc">Connects Claude AI to Revit databases using a C# HTTP server and Python Model Context Protocol. Enables natural language commands for querying and drafting.</p>
+        <div class="bim-tech">
+          <span class="bim-tag">C#</span>
+          <span class="bim-tag">Python MCP</span>
+          <span class="bim-tag">Claude AI</span>
+          <span class="bim-tag">Revit API</span>
+        </div>
+        <span class="badge badge-green" style="margin-top:0.8rem;display:inline-flex;">
+          <span class="bdot"></span>Live — Internal
+        </span>
       </div>
+
       <div class="bim-card">
         <div class="bim-num">CS–003</div>
-        <div class="bim-video-area">
-          <div class="bim-video-label">Paste YouTube embed here<br />Upload demo to YouTube → Share → Embed<br />Copy
-            the iframe code</div>
+        <div class="bim-video-area" data-tool-id="batchexport">
+          <div class="bim-video-label">Demo Video Coming Soon</div>
         </div>
         <div class="bim-name">Batch Export Module</div>
         <div class="bim-sub">Multi-format Export · Production Tool</div>
-        <p class="bim-desc">Batch export Revit sheets to PDF, DWG, DWF with intelligent naming, folder structuring, and
-          revision tracking. Built for 100+ sheet CD sets.</p>
-        <div class="bim-tech"><span class="bim-tag">C#</span><span class="bim-tag">Revit API</span><span
-            class="bim-tag">PDF Export</span><span class="bim-tag">DWG Export</span></div>
-        <span class="badge badge-red" style="margin-top:0.8rem;display:inline-flex;"><span class="bdot pulse"></span>In
-          Development</span>
+        <p class="bim-desc">Batch exports Revit sheets to PDF, DWG, and DWF with intelligent naming, directory structuring, and automated revision tracking. Built for 100+ sheet sets.</p>
+        <div class="bim-tech">
+          <span class="bim-tag">C#</span>
+          <span class="bim-tag">Revit API</span>
+          <span class="bim-tag">PDF Export</span>
+          <span class="bim-tag">DWG Export</span>
+        </div>
+        <span class="badge badge-red" style="margin-top:0.8rem;display:inline-flex;">
+          <span class="bdot pulse"></span>In Development
+        </span>
       </div>
     </div>
 
@@ -142,642 +148,652 @@
     <!-- PALO ALTO -->
     <div class="category-label" id="g-paloalto">// Palo Alto · City of Palo Alto Planning & Building Dept.</div>
     <div class="project-list">
-
-      
       <div class="project-block">
-      <div class="project-cover-container">
-        <img src="images/projects/dolgov/cover.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
-      </div>
-<div class="project-row">
-        <div>
-          <div class="pr-index">SS–002</div>
-          <div class="pr-name">Dolgov Main House</div>
-          <div class="pr-sub">Residential Remodel — Palo Alto Planning Dept.</div>
-          <div class="pr-tags">
-            <span class="pr-tag red">Title 24 Coord.</span><span class="pr-tag red">Green Building</span><span
-              class="pr-tag">Geotech Review</span><span class="pr-tag">Planning Permit</span><span class="pr-tag">GC
-              Coordination</span><span class="pr-tag">Full CD Set</span>
+        <div class="project-cover-container">
+          <img src="images/projects/dolgov/cover.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–002</div>
+            <div class="pr-name">Dolgov Main House</div>
+            <div class="pr-sub">Residential Remodel — Palo Alto Planning Dept.</div>
+            <div class="pr-tags">
+              <span class="pr-tag red">Title 24 Coord.</span>
+              <span class="pr-tag red">Green Building</span>
+              <span class="pr-tag">Geotech Review</span>
+              <span class="pr-tag">Planning Permit</span>
+              <span class="pr-tag">GC Coordination</span>
+              <span class="pr-tag">Full CD Set</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>Residential Remodel</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Palo Alto, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2025 - 2026</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-green"><span class="bdot"></span>Planning Approved</span>
+            <span class="badge badge-green"><span class="bdot"></span>Title 24 Coord.</span>
+            <span class="badge badge-green"><span class="bdot"></span>Geotech Approved</span>
           </div>
         </div>
-        <div class="pr-col"><strong>Type</strong><span>Residential Remodel</span></div>
-        <div class="pr-col"><strong>Location</strong><span>Palo Alto, CA</span></div>
-        <div class="pr-col"><strong>Timeline</strong><span>2025 - 2026</span></div>
-        <div class="pr-status-col">
-          <span class="badge badge-green"><span class="bdot"></span>Planning Approved</span>
-          <span class="badge badge-green"><span class="bdot"></span>Title 24 Coord.</span>
-          <span class="badge badge-green"><span class="bdot"></span>Geotech Approved</span>
+        <div class="doc-gallery">
+          <img src="images/projects/dolgov/DOL M_0.png" class="doc-img" alt="Dolgov Main House Documentation Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/dolgov/DOL M_1.png" class="doc-img" alt="Dolgov Main House Documentation Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/dolgov/DOL M_2.png" class="doc-img" alt="Dolgov Main House Documentation Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/dolgov/DOL M_3.png" class="doc-img" alt="Dolgov Main House Documentation Sheet 4" loading="lazy" decoding="async">
+          <img src="images/projects/dolgov/DOL M_4.png" class="doc-img" alt="Dolgov Main House Documentation Sheet 5" loading="lazy" decoding="async">
         </div>
       </div>
-      <div class="doc-gallery">
-        <img src="images/projects/dolgov/DOL M_0.png" class="doc-img" alt="Dolgov Main House Documentation Sheet 1" loading="lazy" decoding="async">
-        <img src="images/projects/dolgov/DOL M_1.png" class="doc-img" alt="Dolgov Main House Documentation Sheet 2" loading="lazy" decoding="async">
-        <img src="images/projects/dolgov/DOL M_2.png" class="doc-img" alt="Dolgov Main House Documentation Sheet 3" loading="lazy" decoding="async">
-        <img src="images/projects/dolgov/DOL M_3.png" class="doc-img" alt="Dolgov Main House Documentation Sheet 4" loading="lazy" decoding="async">
-        <img src="images/projects/dolgov/DOL M_4.png" class="doc-img" alt="Dolgov Main House Documentation Sheet 5" loading="lazy" decoding="async">
-      </div>
-
     </div>
 
-      </div> <!-- end project-block -->
+    <div class="spacer"></div>
+
     <!-- MONTEREY COUNTY -->
     <div class="category-label" id="g-monterey">// Monterey County · County Planning & Building Dept.</div>
     <div class="project-list">
 
-        <div class="project-block">
-            <div class="project-row">
-                <div>
-                    <div class="pr-index">SS–013</div>
-                    <div class="pr-name">Bayview</div>
-                    <div class="pr-sub">Construction Documents — 1-Month Priority Delivery</div>
-                    <div class="pr-tags">
-                        <span class="pr-tag red">Priority Deadline</span><span class="pr-tag">Construction Documents</span><span class="pr-tag">Consultant Coordination</span>
-                    </div>
-                </div>
-                <div class="pr-col"><strong>Type</strong><span>New Construction</span></div>
-                <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-                <div class="pr-col"><strong>Timeline</strong><span>April 2026 · 1-Month Deadline</span></div>
-                <div class="pr-status-col">
-                    <span class="badge badge-red">
-                        <span class="bdot pulse"></span>Active ·
-                        Priority
-                    </span>
-                </div>
-            </div>
-
-        </div>
-
-
-
-    </div> <!-- end project-block -->
+      <!-- 1. CAPPO SCENIC -->
       <div class="project-block">
-            <div class="project-cover-container">
-                <img src="images/projects/cappo/cover.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        <div class="project-cover-container">
+          <img src="images/projects/cappo/cover.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–001</div>
+            <div class="pr-name">Cappo Scenic</div>
+            <div class="pr-sub">Multi-component — Main House · ADU · Deck · Retaining Wall</div>
+            <div class="pr-tags">
+              <span class="pr-tag red">Full Lifecycle</span>
+              <span class="pr-tag">Planning Permit</span>
+              <span class="pr-tag">Building Permit</span>
+              <span class="pr-tag">ADU</span>
+              <span class="pr-tag">GC Coordination</span>
+              <span class="pr-tag">RFI Management</span>
+              <span class="pr-tag">Structural Coord</span>
             </div>
-            <div class="project-row">
-                <div>
-                    <div class="pr-index">SS–001</div>
-                    <div class="pr-name">Cappo Scenic</div>
-                    <div class="pr-sub">Multi-component — Main House · ADU · Deck · Retaining Wall</div>
-                    <div class="pr-tags">
-                        <span class="pr-tag red">Full Lifecycle</span><span class="pr-tag">Planning Permit</span><span class="pr-tag">Building Permit</span><span class="pr-tag">ADU</span><span class="pr-tag">
-                            GC
-                            Coordination
-                        </span><span class="pr-tag">RFI Management</span><span class="pr-tag">Structural Coord</span>
-                    </div>
-                </div>
-                <div class="pr-col"><strong>Type</strong><span>Residential Remodel + ADU + Additions</span></div>
-                <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-                <div class="pr-col"><strong>Timeline</strong><span>2024 – 2026</span></div>
-                <div class="pr-status-col">
-                    <span class="badge badge-green"><span class="bdot"></span>Planning Approved</span>
-                    <span class="badge badge-green"><span class="bdot"></span>Building Approved</span>
-                    <span class="badge badge-green"><span class="bdot"></span>ADU Approved</span>
-                    <span class="badge badge-green"><span class="bdot"></span>Deck Approved</span>
-                </div>
-            </div>
-            <div class="sub-project">
-                <div class="sp-label">2A · Main House Remodel</div>
-                <div class="sp-name">Full Lifecycle Delivery</div>
-                <div class="sp-scope">
-                    Design → Planning Permit (Round 2 Approval) → Building Permit → Construction Documents →
-                    GC Coordination → RFI Management
-                </div>
-                <div class="sp-badges">
-                    <span class="badge badge-green">
-                        <span class="bdot"></span>Planning Round 2
-                        Approved
-                    </span><span class="badge badge-green"><span class="bdot"></span>Building Approved</span>
-                </div>
-            </div>
-            <div class="doc-gallery">
-                <img src="images/projects/cappo/cappo_1.png" class="doc-img" alt="Cappo Main House Documentation Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/cappo/Cappo_2.png" class="doc-img" alt="Cappo Main House Documentation Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/cappo/Cappo_3.png" class="doc-img" alt="Cappo Main House Documentation Sheet 3" loading="lazy" decoding="async">
-                <img src="images/projects/cappo/Cappo_4.png" class="doc-img" alt="Cappo Main House Documentation Sheet 4" loading="lazy" decoding="async">
-                <img src="images/projects/cappo/Cappo_5.png" class="doc-img" alt="Cappo Main House Documentation Sheet 5" loading="lazy" decoding="async">
-                <img src="images/projects/cappo/Cappo_6.png" class="doc-img" alt="Cappo Main House Documentation Sheet 6" loading="lazy" decoding="async">
-            </div>
-            <div class="sub-project">
-                <div class="sp-label">2B · ADU — Separate Permit Package</div>
-                <div class="sp-name">Accessory Dwelling Unit</div>
-                <div class="sp-scope">
-                    Independent planning & building permits · Full Construction Documents · Structural & MEP
-                    coordination
-                </div>
-                <div class="sp-badges">
-                    <span class="badge badge-green"><span class="bdot"></span>Planning Approved</span><span class="badge badge-green"><span class="bdot"></span>Building Approved</span>
-                </div>
-            </div>
-            <div class="doc-gallery">
-                <img src="images/projects/cappo/cappo adu_1.png" class="doc-img" alt="Cappo ADU Documentation Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/cappo/cappo adu_2.png" class="doc-img" alt="Cappo ADU Documentation Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/cappo/cappo adu_3.png" class="doc-img" alt="Cappo ADU Documentation Sheet 3" loading="lazy" decoding="async">
-                <img src="images/projects/cappo/cappo adu_3a.png" class="doc-img" alt="Cappo ADU Documentation Sheet 4" loading="lazy" decoding="async">
-            </div>
-            <div class="sub-project">
-                <div class="sp-label">2C · Deck Permit</div>
-                <div class="sp-name">Deck Addition</div>
-                <div class="sp-scope">Permitted deck addition · Full drawings package</div>
-                <div class="sp-badges"><span class="badge badge-green"><span class="bdot"></span>Approved</span></div>
-            </div>
-            <div class="doc-gallery">
-                <img src="images/projects/cappo/cappo deck_1.png" class="doc-img" alt="Cappo Deck Documentation Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/cappo/cappo deck_2.png" class="doc-img" alt="Cappo Deck Documentation Sheet 2" loading="lazy" decoding="async">
-            </div>
-            <div class="sub-project">
-                <div class="sp-label">2D · Site & Retaining Wall</div>
-                <div class="sp-name">Over-the-Table Permit</div>
-                <div class="sp-scope">
-                    Structural coordination · Over-the-table permit process · GC coordination through build
-                </div>
-                <div class="sp-badges"><span class="badge badge-green"><span class="bdot"></span>Built</span></div>
-            </div>
-
-
-
-        </div> <!-- end project-block -->
-        <div class="project-block">
-            <div class="project-cover-container">
-                <img src="images/projects/yeung-studio/Yeung.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="project-row">
-                <div>
-                    <div class="pr-index">SS–005</div>
-                    <div class="pr-name">Yeung Remodel</div>
-                    <div class="pr-sub">Historical Main House + Studio/Office (600 sq ft) — Dual Permit Package</div>
-                    <div class="pr-tags">
-                        <span class="pr-tag red">Historical Building</span><span class="pr-tag red">
-                            Golden Ratio
-                            Design
-                        </span><span class="pr-tag">Submittal Management</span><span class="pr-tag">
-                            Structural ·
-                            MEP
-                        </span><span class="pr-tag">GC Coordination</span><span class="pr-tag">RFI Management</span>
-                    </div>
-                </div>
-                <div class="pr-col"><strong>Type</strong><span>Historical Remodel + New Studio</span></div>
-                <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-                <div class="pr-col"><strong>Timeline</strong><span>2025 – 2026</span></div>
-                <div class="pr-status-col">
-                    <span class="badge badge-green"><span class="bdot"></span>Both Permits Approved</span>
-                    <span class="badge badge-red"><span class="bdot pulse"></span>Construction Ongoing</span>
-                </div>
-            </div>
-            <div class="sub-project">
-                <div class="sp-label">7A · Main House — Historical Building</div>
-                <div class="sp-name">Historical Permit & Construction Documents</div>
-                <div class="sp-scope">Permit set → Approved · Full CDs · GC coordination through construction</div>
-                <div class="sp-badges"><span class="badge badge-green"><span class="bdot"></span>Approved</span></div>
-            </div>
-            <div class="doc-gallery">
-                <img src="images/projects/yeung-main-house-remodel/1_yeung MH.png" class="doc-img" alt="Yeung Main House Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-main-house-remodel/2_yeung MH.png" class="doc-img" alt="Yeung Main House Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-main-house-remodel/3_yeung MH.png" class="doc-img" alt="Yeung Main House Sheet 3" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-main-house-remodel/4_yeung MH.png" class="doc-img" alt="Yeung Main House Sheet 4" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-main-house-remodel/5_yeung MH.png" class="doc-img" alt="Yeung Main House Sheet 5" loading="lazy" decoding="async">
-            </div>
-            <div class="sub-project">
-                <div class="sp-label">7B · Studio / Office (600 sq ft) — Fluid Design with Golden Ratio Curves</div>
-                <div class="sp-name">Architectural Design + Full Permit</div>
-                <div class="sp-scope">
-                    Fluid design with golden ratio curve elements · Full permit set → Approved · Structural,
-                    MEP & specialty coordination · Submittal & RFI management · Ongoing GC support
-                </div>
-                <div class="sp-badges">
-                    <span class="badge badge-green"><span class="bdot"></span>Approved</span><span class="badge badge-red"><span class="bdot pulse"></span>Under Construction</span>
-                </div>
-            </div>
-            <div class="doc-gallery">
-                <img src="images/projects/yeung-studio/1_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-studio/2_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-studio/3_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 3" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-studio/4_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 4" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-studio/5_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 5" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-studio/6_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 6" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-studio/7_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 7" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-studio/8_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 8" loading="lazy" decoding="async">
-                <img src="images/projects/yeung-studio/9_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 9" loading="lazy" decoding="async">
-            </div>
-
-        </div> <!-- end project-block -->
-        <div class="project-block">
-            <div class="project-cover-container">
-                <!-- Reverted cover path here -->
-                <img src="images/projects/knoop/knoop 250.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="project-row">
-                <div>
-                    <div class="pr-index">SS–004</div>
-                    <div class="pr-name">Knoop 250</div>
-                    <div class="pr-sub">Residential Remodel</div>
-                    <div class="pr-tags">
-                        <span class="pr-tag">Permit Set</span><span class="pr-tag">Consultant Coordination</span><span class="pr-tag">County Submission</span><span class="pr-tag">Full CD Set</span>
-                    </div>
-                </div>
-                <div class="pr-col"><strong>Type</strong><span>Residential Remodel</span></div>
-                <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-                <div class="pr-col"><strong>Timeline</strong><span>2024 - 2025</span></div>
-                <div class="pr-status-col">
-                    <span class="badge badge-green"><span class="bdot"></span>County Approved</span>
-                    <span class="badge badge-green"><span class="bdot"></span>CDs Delivered</span>
-                </div>
-            </div>
-
-            <div class="doc-gallery">
-                <img src="images/projects/knoop/1_ Knoop 250.png" class="doc-img" alt="Knoop Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/knoop/2_ Knoop 250.png" class="doc-img" alt="Knoop Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/knoop/3_ Knoop 250.png" class="doc-img" alt="Knoop Sheet 3" loading="lazy" decoding="async">
-                <img src="images/projects/knoop/4_ Knoop 250.png" class="doc-img" alt="Knoop Sheet 4" loading="lazy" decoding="async">
-            </div>
-        </div> <!-- end project-block -->
-        <div class="project-block">
-            <div class="project-cover-container">
-                <img src="images/projects/moss/Moss.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="project-row">
-                <div>
-                    <div class="pr-index">SS–006</div>
-                    <div class="pr-name">Moss Residence</div>
-                    <div class="pr-sub">Historical Building Remodel — Project Lead</div>
-                    <div class="pr-tags">
-                        <span class="pr-tag red">Historical Building</span><span class="pr-tag red">Project Lead</span><span class="pr-tag">Site Visits</span><span class="pr-tag">Design Collaboration</span><span class="pr-tag">Permit Set</span><span class="pr-tag">Full CD Set</span>
-                    </div>
-                </div>
-                <div class="pr-col"><strong>Type</strong><span>Historical Residential Remodel</span></div>
-                <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-                <div class="pr-col"><strong>Timeline</strong><span>2024 – 2025</span></div>
-                <div class="pr-status-col">
-                    <span class="badge badge-green"><span class="bdot"></span>Permit Approved</span>
-                    <span class="badge badge-green"><span class="bdot"></span>CDs Complete</span>
-                </div>
-            </div>
-            <div class="doc-gallery">
-                <img src="images/projects/moss/1_Moss.png" class="doc-img" alt="Moss Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/moss/2_Moss.png" class="doc-img" alt="Moss Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/moss/3_Moss.png" class="doc-img" alt="Moss Sheet 3" loading="lazy" decoding="async">
-                <img src="images/projects/moss/4_Moss.png" class="doc-img" alt="Moss Sheet 4" loading="lazy" decoding="async">
-                <img src="images/projects/moss/5_Moss.png" class="doc-img" alt="Moss Sheet 5" loading="lazy" decoding="async">
-                <img src="images/projects/moss/6_Moss.png" class="doc-img" alt="Moss Sheet 6" loading="lazy" decoding="async">
-            </div>
-
-        </div> <!-- end project-block -->
-        <div class="project-block">
-            <div class="project-cover-container">
-                <img src="images/projects/connors/connors.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="project-row">
-                <div>
-                    <div class="pr-index">SS–009</div>
-                    <div class="pr-name">Connors Residence</div>
-                    <div class="pr-sub">New Residential Construction — CD & Coordination</div>
-                    <div class="pr-tags">
-                        <span class="pr-tag">Construction Documents</span><span class="pr-tag">Consultant Coordination</span><span class="pr-tag">Submittal Coordination</span><span class="pr-tag">Construction Correspondence</span>
-                    </div>
-                </div>
-                <div class="pr-col"><strong>Type</strong><span>New Residential Construction</span></div>
-                <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-                <div class="pr-col"><strong>Timeline</strong><span>2024 – Ongoing</span></div>
-                <div class="pr-status-col">
-                    <span class="badge badge-red"><span class="bdot pulse"></span>In Progress</span>
-                </div>
-            </div>
-            <div class="doc-gallery">
-                <img src="images/projects/connors/1_Connors.png" class="doc-img" alt="Connors Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/connors/2_Connors.png" class="doc-img" alt="Connors Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/connors/3_Connors.png" class="doc-img" alt="Connors Sheet 3" loading="lazy" decoding="async">
-                <img src="images/projects/connors/4_Connors.png" class="doc-img" alt="Connors Sheet 4" loading="lazy" decoding="async">
-                <img src="images/projects/connors/5_Connors.png" class="doc-img" alt="Connors Sheet 5" loading="lazy" decoding="async">
-                <img src="images/projects/connors/6_Connors.png" class="doc-img" alt="Connors Sheet 6" loading="lazy" decoding="async">
-                <img src="images/projects/connors/7_Connors.png" class="doc-img" alt="Connors Sheet 7" loading="lazy" decoding="async">
-                <img src="images/projects/connors/8_Connors.png" class="doc-img" alt="Connors Sheet 8" loading="lazy" decoding="async">
-                <img src="images/projects/connors/9_Connors.png" class="doc-img" alt="Connors Sheet 9" loading="lazy" decoding="async">
-            </div>
-
-        </div> <!-- end project-block -->
-        <div class="project-block">
-            <div class="project-cover-container">
-                <img src="images/projects/lunquist/Lundquist.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="project-row">
-                <div>
-                    <div class="pr-index">SS–010</div>
-                    <div class="pr-name">Lunquist Residence</div>
-                    <div class="pr-sub">New Residential Construction — Technical Detail Package</div>
-                    <div class="pr-tags">
-                        <span class="pr-tag">Door & Window Assemblies</span><span class="pr-tag">Wall Assemblies</span><span class="pr-tag">Roof Assemblies</span><span class="pr-tag">Specification Coordination</span><span class="pr-tag">Full CD Set</span>
-                    </div>
-                </div>
-                <div class="pr-col"><strong>Type</strong><span>New Residential Construction</span></div>
-                <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-                <div class="pr-col"><strong>Timeline</strong><span>2024 – Ongoing</span></div>
-                <div class="pr-status-col">
-                    <span class="badge badge-red"><span class="bdot pulse"></span>In Progress</span>
-                </div>
-            </div>
-            <div class="doc-gallery">
-                <img src="images/projects/lunquist/lunquist_1.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/lunquist/lunquist_2.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/lunquist/lunquist_3.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 3" loading="lazy" decoding="async">
-                <img src="images/projects/lunquist/lunquist_4.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 4" loading="lazy" decoding="async">
-                <img src="images/projects/lunquist/lunquist_5.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 5" loading="lazy" decoding="async">
-                <img src="images/projects/lunquist/lunquist_6.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 6" loading="lazy" decoding="async">
-                <img src="images/projects/lunquist/lunquist_7.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 7" loading="lazy" decoding="async">
-                <img src="images/projects/lunquist/lunquist_8.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 8" loading="lazy" decoding="async">
-            </div>
-        </div> <!-- end project-block for Lunquist -->
-
-        <div class="project-block">
-            <div class="project-cover-container">
-                <img src="images/projects/kartalis/kartalis cover.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="project-row">
-                <div>
-                    <div class="pr-index">SS–011</div>
-                    <div class="pr-name">Kartalis Residence</div>
-                    <div class="pr-sub">New Residential Construction — Technical Details & GC Coordination</div>
-                    <div class="pr-tags">
-                        <span class="pr-tag">Door & Window Specs</span><span class="pr-tag">Wall & Roof Assembly</span><span class="pr-tag">Technical Details</span><span class="pr-tag">GC Coordination</span>
-                    </div>
-                </div>
-                <div class="pr-col"><strong>Type</strong><span>New Residential Construction</span></div>
-                <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-                <div class="pr-col"><strong>Timeline</strong><span>2024 – Ongoing</span></div>
-                <div class="pr-status-col">
-                    <span class="badge badge-red"><span class="bdot pulse"></span>In Progress</span>
-                </div>
-            </div>
-            <div class="doc-gallery">
-                <img src="images/projects/kartalis/1_kartalis .png" class="doc-img" alt="Kartalis Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/kartalis/2_kartalis .png" class="doc-img" alt="Kartalis Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/kartalis/3_kartalis .png" class="doc-img" alt="Kartalis Sheet 3" loading="lazy" decoding="async">
-                <img src="images/projects/kartalis/4_kartalis .png" class="doc-img" alt="Kartalis Sheet 4" loading="lazy" decoding="async">
-                <img src="images/projects/kartalis/5_kartalis .png" class="doc-img" alt="Kartalis Sheet 5" loading="lazy" decoding="async">
-                <img src="images/projects/kartalis/6_kartalis .png" class="doc-img" alt="Kartalis Sheet 6" loading="lazy" decoding="async">
-            </div>
-
-        </div> <!-- end project-block for Kartalis -->
-
-        <div class="project-block">
-            <div class="project-cover-container">
-                <!-- Reverted cover path here -->
-                <img src="images/projects/kani/kani.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
-            </div>
-            <div class="project-row">
-                <div>
-                    <div class="pr-index">SS–003</div>
-                    <div class="pr-name">Kani Remodel</div>
-                    <div class="pr-sub">3-Level Residential Remodel</div>
-                    <div class="pr-tags">
-                        <span class="pr-tag">Full Permit Coordination</span><span class="pr-tag">GC Coordination</span><span class="pr-tag">RFI Management</span><span class="pr-tag">Consultant Coordination</span>
-                    </div>
-                </div>
-                <div class="pr-col"><strong>Type</strong><span>Residential Remodel · 3 Levels</span></div>
-                <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-                <div class="pr-col"><strong>Timeline</strong><span>2023 – 2024</span></div>
-                <div class="pr-status-col">
-                    <span class="badge badge-green"><span class="bdot"></span>Permit Approved</span>
-                    <span class="badge badge-green"><span class="bdot"></span>Construction Complete</span>
-                </div>
-            </div>
-
-            <div class="doc-gallery">
-                <img src="images/projects/kani/1_kani remodel.png" class="doc-img" alt="Kani Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/kani/2_kani remodel.png" class="doc-img" alt="Kani Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/kani/3_kani remodel.png" class="doc-img" alt="Kani Sheet 3" loading="lazy" decoding="async">
-                <img src="images/projects/kani/4_kani remodel.png" class="doc-img" alt="Kani Sheet 4" loading="lazy" decoding="async">
-                <img src="images/projects/kani/5_kani remodel.png" class="doc-img" alt="Kani Sheet 5" loading="lazy" decoding="async">
-                <img src="images/projects/kani/6_kani remodel.png" class="doc-img" alt="Kani Sheet 6" loading="lazy" decoding="async">
-                <img src="images/projects/kani/7_kani remodel.png" class="doc-img" alt="Kani Sheet 7" loading="lazy" decoding="async">
-                <img src="images/projects/kani/8_kani remodel.png" class="doc-img" alt="Kani Sheet 8" loading="lazy" decoding="async">
-                <img src="images/projects/kani/9_kani remodel.png" class="doc-img" alt="Kani Sheet 9" loading="lazy" decoding="async">
-                <img src="images/projects/kani/10_kani remodel.png" class="doc-img" alt="Kani Sheet 10" loading="lazy" decoding="async">
-                <img src="images/projects/kani/11_kani remodel.png" class="doc-img" alt="Kani Sheet 11" loading="lazy" decoding="async">
-            </div>
-        </div> <!-- end project-block -->
-        <div class="project-block">
-            <div class="project-row">
-                <div>
-                    <div class="pr-index">SS–008</div>
-                    <div class="pr-name">Charl Cherry Art Studio</div>
-                    <div class="pr-sub">New Commercial Construction (775 sq ft) — First Full Project Lead</div>
-                    <div class="pr-tags">
-                        <span class="pr-tag red">Project Lead</span><span class="pr-tag red">ADA Compliance</span><span class="pr-tag red">Commercial</span><span class="pr-tag">Planning Approval</span><span class="pr-tag">Building Permit</span><span class="pr-tag">MEP Coordination</span><span class="pr-tag">
-                            Full
-                            CD Set
-                        </span>
-                    </div>
-                </div>
-                <div class="pr-col"><strong>Type</strong><span>New Commercial · 775 sq ft</span></div>
-                <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-                <div class="pr-col"><strong>Timeline</strong><span>2023 – 2024</span></div>
-                <div class="pr-status-col">
-                    <span class="badge badge-green"><span class="bdot"></span>Planning Approved</span>
-                    <span class="badge badge-green"><span class="bdot"></span>Building Approved</span>
-                    <span class="badge badge-green"><span class="bdot"></span>ADA Fulfilled</span>
-                </div>
-            </div>
-            <div class="doc-gallery">
-                <img src="images/projects/charl-cherry/1_carl cherry.png" class="doc-img" alt="Charl Cherry Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/charl-cherry/2_carl cherry.png" class="doc-img" alt="Charl Cherry Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/charl-cherry/3_carl cherry.png" class="doc-img" alt="Charl Cherry Sheet 3" loading="lazy" decoding="async">
-                <img src="images/projects/charl-cherry/4_carl cherry.png" class="doc-img" alt="Charl Cherry Sheet 4" loading="lazy" decoding="async">
-            </div>
-
-        </div> <!-- end project-block -->
-        <div class="project-block">
-      <div class="project-cover-container">
-        <img src="images/projects/mccarthy/Mccarthy.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
-      </div>
-<div class="project-row">
-        <div>
-          <div class="pr-index">SS–014</div>
-          <div class="pr-name">McCarthy Residence</div>
-          <div class="pr-sub">Permit Set & Construction Set</div>
-          <div class="pr-tags">
-            <span class="pr-tag">Permit Set</span><span class="pr-tag">Construction Documents</span>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>Residential Remodel + ADU + Additions</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2024 – 2026</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-green"><span class="bdot"></span>Planning Approved</span>
+            <span class="badge badge-green"><span class="bdot"></span>Building Approved</span>
+            <span class="badge badge-green"><span class="bdot"></span>ADU Approved</span>
+            <span class="badge badge-green"><span class="bdot"></span>Deck Approved</span>
           </div>
         </div>
-        <div class="pr-col"><strong>Type</strong><span>Residential</span></div>
-        <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-        <div class="pr-col"><strong>Timeline</strong><span>2024</span></div>
-        <div class="pr-status-col">
-          <span class="badge badge-green"><span class="bdot"></span>Delivered</span>
-        </div>
-      </div>
-      <div class="doc-gallery">
-        <img src="images/projects/mccarthy/1_Mccarthy.png" class="doc-img" alt="McCarthy Sheet 1" loading="lazy" decoding="async">
-      </div>
-
-      </div> <!-- end project-block -->
-      <div class="project-block">
-      <div class="project-cover-container">
-        <img src="images/projects/lot67/lot 67.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
-      </div>
-<div class="project-row">
-        <div>
-          <div class="pr-index">SS–015</div>
-          <div class="pr-name">Lot 67</div>
-          <div class="pr-sub">Permit Set & Construction Set</div>
-          <div class="pr-tags">
-            <span class="pr-tag">Permit Set</span><span class="pr-tag">Construction Documents</span>
+        
+        <div class="sub-project">
+          <div class="sp-label">2A · Main House Remodel</div>
+          <div class="sp-name">Full Lifecycle Delivery</div>
+          <div class="sp-scope">Design → Planning Permit (Round 2 Approval) → Building Permit → Construction Documents → GC Coordination → RFI Management</div>
+          <div class="sp-badges">
+            <span class="badge badge-green"><span class="bdot"></span>Planning Round 2 Approved</span>
+            <span class="badge badge-green"><span class="bdot"></span>Building Approved</span>
           </div>
         </div>
-        <div class="pr-col"><strong>Type</strong><span>Residential</span></div>
-        <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-        <div class="pr-col"><strong>Timeline</strong><span>2024</span></div>
-        <div class="pr-status-col">
-          <span class="badge badge-green"><span class="bdot"></span>Delivered</span>
+        <div class="doc-gallery">
+          <img src="images/projects/cappo/cappo_1.png" class="doc-img" alt="Cappo Main House Documentation Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/cappo/Cappo_2.png" class="doc-img" alt="Cappo Main House Documentation Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/cappo/Cappo_3.png" class="doc-img" alt="Cappo Main House Documentation Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/cappo/Cappo_4.png" class="doc-img" alt="Cappo Main House Documentation Sheet 4" loading="lazy" decoding="async">
+          <img src="images/projects/cappo/Cappo_5.png" class="doc-img" alt="Cappo Main House Documentation Sheet 5" loading="lazy" decoding="async">
+          <img src="images/projects/cappo/Cappo_6.png" class="doc-img" alt="Cappo Main House Documentation Sheet 6" loading="lazy" decoding="async">
+        </div>
+
+        <div class="sub-project">
+          <div class="sp-label">2B · ADU — Separate Permit Package</div>
+          <div class="sp-name">Accessory Dwelling Unit</div>
+          <div class="sp-scope">Independent planning & building permits · Full Construction Documents · Structural & MEP coordination</div>
+          <div class="sp-badges">
+            <span class="badge badge-green"><span class="bdot"></span>Planning Approved</span>
+            <span class="badge badge-green"><span class="bdot"></span>Building Approved</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/cappo/cappo adu_1.png" class="doc-img" alt="Cappo ADU Documentation Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/cappo/cappo adu_2.png" class="doc-img" alt="Cappo ADU Documentation Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/cappo/cappo adu_3.png" class="doc-img" alt="Cappo ADU Documentation Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/cappo/cappo adu_3a.png" class="doc-img" alt="Cappo ADU Documentation Sheet 4" loading="lazy" decoding="async">
+        </div>
+
+        <div class="sub-project">
+          <div class="sp-label">2C · Deck Permit</div>
+          <div class="sp-name">Deck Addition</div>
+          <div class="sp-scope">Permitted deck addition · Full drawings package</div>
+          <div class="sp-badges">
+            <span class="badge badge-green"><span class="bdot"></span>Approved</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/cappo/cappo deck_1.png" class="doc-img" alt="Cappo Deck Documentation Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/cappo/cappo deck_2.png" class="doc-img" alt="Cappo Deck Documentation Sheet 2" loading="lazy" decoding="async">
+        </div>
+
+        <div class="sub-project">
+          <div class="sp-label">2D · Site & Retaining Wall</div>
+          <div class="sp-name">Over-the-Table Permit</div>
+          <div class="sp-scope">Structural coordination · Over-the-table permit process · GC coordination through build</div>
+          <div class="sp-badges">
+            <span class="badge badge-green"><span class="bdot"></span>Built</span>
+          </div>
         </div>
       </div>
-      <div class="doc-gallery">
-        <img src="images/projects/lot67/1_lot 67.png" class="doc-img" alt="Lot 67 Sheet 1" loading="lazy" decoding="async">
-        <img src="images/projects/lot67/2_lot 67.png" class="doc-img" alt="Lot 67 Sheet 2" loading="lazy" decoding="async">
-        <img src="images/projects/lot67/3_lot 67.png" class="doc-img" alt="Lot 67 Sheet 3" loading="lazy" decoding="async">
-        <img src="images/projects/lot67/4_lot 67.png" class="doc-img" alt="Lot 67 Sheet 4" loading="lazy" decoding="async">
-        <img src="images/projects/lot67/5_lot 67.png" class="doc-img" alt="Lot 67 Sheet 5" loading="lazy" decoding="async">
+
+      <!-- 2. CHARL CHERRY ART STUDIO -->
+      <div class="project-block">
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–008</div>
+            <div class="pr-name">Charl Cherry Art Studio</div>
+            <div class="pr-sub">New Commercial Construction (775 sq ft) — First Full Project Lead</div>
+            <div class="pr-tags">
+              <span class="pr-tag red">Project Lead</span>
+              <span class="pr-tag red">ADA Compliance</span>
+              <span class="pr-tag red">Commercial</span>
+              <span class="pr-tag">Planning Approval</span>
+              <span class="pr-tag">Building Permit</span>
+              <span class="pr-tag">MEP Coordination</span>
+              <span class="pr-tag">Full CD Set</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>New Commercial · 775 sq ft</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2023 – 2024</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-green"><span class="bdot"></span>Planning Approved</span>
+            <span class="badge badge-green"><span class="bdot"></span>Building Approved</span>
+            <span class="badge badge-green"><span class="bdot"></span>ADA Fulfilled</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/charl-cherry/1_carl cherry.png" class="doc-img" alt="Charl Cherry Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/charl-cherry/2_carl cherry.png" class="doc-img" alt="Charl Cherry Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/charl-cherry/3_carl cherry.png" class="doc-img" alt="Charl Cherry Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/charl-cherry/4_carl cherry.png" class="doc-img" alt="Charl Cherry Sheet 4" loading="lazy" decoding="async">
+        </div>
       </div>
 
-      </div> <!-- end project-block -->
-    <div class="project-block">
-            <div class="project-cover-container">
-                <img src="images/projects/nelson/Nelson.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+      <!-- 3. MOSS RESIDENCE -->
+      <div class="project-block">
+        <div class="project-cover-container">
+          <img src="images/projects/moss/Moss.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–006</div>
+            <div class="pr-name">Moss Residence</div>
+            <div class="pr-sub">Historical Building Remodel — Project Lead</div>
+            <div class="pr-tags">
+              <span class="pr-tag red">Historical Building</span>
+              <span class="pr-tag red">Project Lead</span>
+              <span class="pr-tag">Site Visits</span>
+              <span class="pr-tag">Design Collaboration</span>
+              <span class="pr-tag">Permit Set</span>
+              <span class="pr-tag">Full CD Set</span>
             </div>
-            <div class="project-row">
-                <div>
-                    <div class="pr-index">SS–007</div>
-                    <div class="pr-name">Nelson's Residence</div>
-                    <div class="pr-sub">Retaining Wall Permit Package</div>
-                    <div class="pr-tags">
-                        <span class="pr-tag">Site Plan</span><span class="pr-tag">Retaining Wall Plan</span><span class="pr-tag">Elevations & Sections</span><span class="pr-tag">Permit Drawings</span>
-                    </div>
-                </div>
-                <div class="pr-col"><strong>Type</strong><span>Retaining Wall Permit</span></div>
-                <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
-                <div class="pr-col"><strong>Timeline</strong><span>2023</span></div>
-                <div class="pr-status-col">
-                    <span class="badge badge-green"><span class="bdot"></span>Permit Approved</span>
-                </div>
-            </div>
-            <div class="doc-gallery">
-                <img src="images/projects/nelson/1_nelson.png" class="doc-img" alt="Nelson Sheet 1" loading="lazy" decoding="async">
-                <img src="images/projects/nelson/2_nelson.png" class="doc-img" alt="Nelson Sheet 2" loading="lazy" decoding="async">
-                <img src="images/projects/nelson/3_nelson.png" class="doc-img" alt="Nelson Sheet 3" loading="lazy" decoding="async">
-            </div>
-        </div> <!-- end project-block -->
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>Historical Residential Remodel</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2024 – 2025</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-green"><span class="bdot"></span>Permit Approved</span>
+            <span class="badge badge-green"><span class="bdot"></span>CDs Complete</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/moss/1_Moss.png" class="doc-img" alt="Moss Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/moss/2_Moss.png" class="doc-img" alt="Moss Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/moss/3_Moss.png" class="doc-img" alt="Moss Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/moss/4_Moss.png" class="doc-img" alt="Moss Sheet 4" loading="lazy" decoding="async">
+          <img src="images/projects/moss/5_Moss.png" class="doc-img" alt="Moss Sheet 5" loading="lazy" decoding="async">
+          <img src="images/projects/moss/6_Moss.png" class="doc-img" alt="Moss Sheet 6" loading="lazy" decoding="async">
+        </div>
+      </div>
 
-        <!-- ORANGE COUNTY -->
+      <!-- 4. YEUNG REMODEL -->
+      <div class="project-block">
+        <div class="project-cover-container">
+          <img src="images/projects/yeung-studio/Yeung.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–005</div>
+            <div class="pr-name">Yeung Remodel</div>
+            <div class="pr-sub">Historical Main House + Studio/Office (600 sq ft) — Dual Permit Package</div>
+            <div class="pr-tags">
+              <span class="pr-tag red">Historical Building</span>
+              <span class="pr-tag red">Golden Ratio Design</span>
+              <span class="pr-tag">Submittal Management</span>
+              <span class="pr-tag">Structural · MEP</span>
+              <span class="pr-tag">GC Coordination</span>
+              <span class="pr-tag">RFI Management</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>Historical Remodel + New Studio</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2025 – 2026</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-green"><span class="bdot"></span>Both Permits Approved</span>
+            <span class="badge badge-red"><span class="bdot pulse"></span>Construction Ongoing</span>
+          </div>
+        </div>
+        
+        <div class="sub-project">
+          <div class="sp-label">7A · Main House — Historical Building</div>
+          <div class="sp-name">Historical Permit & Construction Documents</div>
+          <div class="sp-scope">Permit set → Approved · Full CDs · GC coordination through construction</div>
+          <div class="sp-badges">
+            <span class="badge badge-green"><span class="bdot"></span>Approved</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/yeung-main-house-remodel/1_yeung MH.png" class="doc-img" alt="Yeung Main House Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-main-house-remodel/2_yeung MH.png" class="doc-img" alt="Yeung Main House Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-main-house-remodel/3_yeung MH.png" class="doc-img" alt="Yeung Main House Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-main-house-remodel/4_yeung MH.png" class="doc-img" alt="Yeung Main House Sheet 4" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-main-house-remodel/5_yeung MH.png" class="doc-img" alt="Yeung Main House Sheet 5" loading="lazy" decoding="async">
+        </div>
+
+        <div class="sub-project">
+          <div class="sp-label">7B · Studio / Office (600 sq ft) — Fluid Design with Golden Ratio Curves</div>
+          <div class="sp-name">Architectural Design + Full Permit</div>
+          <div class="sp-scope">Fluid design with golden ratio curve elements · Full permit set → Approved · Structural, MEP & specialty coordination · Submittal & RFI management · Ongoing GC support</div>
+          <div class="sp-badges">
+            <span class="badge badge-green"><span class="bdot"></span>Approved</span>
+            <span class="badge badge-red"><span class="bdot pulse"></span>Under Construction</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/yeung-studio/1_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-studio/2_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-studio/3_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-studio/4_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 4" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-studio/5_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 5" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-studio/6_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 6" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-studio/7_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 7" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-studio/8_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 8" loading="lazy" decoding="async">
+          <img src="images/projects/yeung-studio/9_yeung studio.png" class="doc-img" alt="Yeung Studio Sheet 9" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <!-- 5. MCCARTHY RESIDENCE -->
+      <div class="project-block">
+        <div class="project-cover-container">
+          <img src="images/projects/mccarthy/Mccarthy.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–014</div>
+            <div class="pr-name">McCarthy Residence</div>
+            <div class="pr-sub">Permit Set & Construction Set</div>
+            <div class="pr-tags">
+              <span class="pr-tag">Permit Set</span>
+              <span class="pr-tag">Construction Documents</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>Residential</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2024</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-green"><span class="bdot"></span>Delivered</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/mccarthy/1_Mccarthy.png" class="doc-img" alt="McCarthy Sheet 1" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <!-- 6. KNOOP 250 -->
+      <div class="project-block">
+        <div class="project-cover-container">
+          <img src="images/projects/knoop/knoop 250.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–004</div>
+            <div class="pr-name">Knoop 250</div>
+            <div class="pr-sub">Residential Remodel</div>
+            <div class="pr-tags">
+              <span class="pr-tag">Permit Set</span>
+              <span class="pr-tag">Consultant Coordination</span>
+              <span class="pr-tag">County Submission</span>
+              <span class="pr-tag">Full CD Set</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>Residential Remodel</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2024 - 2025</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-green"><span class="bdot"></span>County Approved</span>
+            <span class="badge badge-green"><span class="bdot"></span>CDs Delivered</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/knoop/1_ Knoop 250.png" class="doc-img" alt="Knoop Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/knoop/2_ Knoop 250.png" class="doc-img" alt="Knoop Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/knoop/3_ Knoop 250.png" class="doc-img" alt="Knoop Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/knoop/4_ Knoop 250.png" class="doc-img" alt="Knoop Sheet 4" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <!-- 7. LUNQUIST RESIDENCE -->
+      <div class="project-block">
+        <div class="project-cover-container">
+          <img src="images/projects/lunquist/Lundquist.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–010</div>
+            <div class="pr-name">Lunquist Residence</div>
+            <div class="pr-sub">New Residential Construction — Technical Detail Package</div>
+            <div class="pr-tags">
+              <span class="pr-tag">Door & Window Assemblies</span>
+              <span class="pr-tag">Wall Assemblies</span>
+              <span class="pr-tag">Roof Assemblies</span>
+              <span class="pr-tag">Specification Coordination</span>
+              <span class="pr-tag">Full CD Set</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>New Residential Construction</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2024 – Ongoing</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-red"><span class="bdot pulse"></span>In Progress</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/lunquist/lunquist_1.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/lunquist/lunquist_2.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/lunquist/lunquist_3.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/lunquist/lunquist_4.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 4" loading="lazy" decoding="async">
+          <img src="images/projects/lunquist/lunquist_5.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 5" loading="lazy" decoding="async">
+          <img src="images/projects/lunquist/lunquist_6.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 6" loading="lazy" decoding="async">
+          <img src="images/projects/lunquist/lunquist_7.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 7" loading="lazy" decoding="async">
+          <img src="images/projects/lunquist/lunquist_8.png" class="doc-img" alt="Lunquist Residence Documentation Sheet 8" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <!-- 8. KANI REMODEL -->
+      <div class="project-block">
+        <div class="project-cover-container">
+          <img src="images/projects/kani/kani.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–003</div>
+            <div class="pr-name">Kani Remodel</div>
+            <div class="pr-sub">3-Level Residential Remodel</div>
+            <div class="pr-tags">
+              <span class="pr-tag">Full Permit Coordination</span>
+              <span class="pr-tag">GC Coordination</span>
+              <span class="pr-tag">RFI Management</span>
+              <span class="pr-tag">Consultant Coordination</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>Residential Remodel · 3 Levels</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2023 – 2024</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-green"><span class="bdot"></span>Permit Approved</span>
+            <span class="badge badge-green"><span class="bdot"></span>Construction Complete</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/kani/1_kani remodel.png" class="doc-img" alt="Kani Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/kani/2_kani remodel.png" class="doc-img" alt="Kani Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/kani/3_kani remodel.png" class="doc-img" alt="Kani Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/kani/4_kani remodel.png" class="doc-img" alt="Kani Sheet 4" loading="lazy" decoding="async">
+          <img src="images/projects/kani/5_kani remodel.png" class="doc-img" alt="Kani Sheet 5" loading="lazy" decoding="async">
+          <img src="images/projects/kani/6_kani remodel.png" class="doc-img" alt="Kani Sheet 6" loading="lazy" decoding="async">
+          <img src="images/projects/kani/7_kani remodel.png" class="doc-img" alt="Kani Sheet 7" loading="lazy" decoding="async">
+          <img src="images/projects/kani/8_kani remodel.png" class="doc-img" alt="Kani Sheet 8" loading="lazy" decoding="async">
+          <img src="images/projects/kani/9_kani remodel.png" class="doc-img" alt="Kani Sheet 9" loading="lazy" decoding="async">
+          <img src="images/projects/kani/10_kani remodel.png" class="doc-img" alt="Kani Sheet 10" loading="lazy" decoding="async">
+          <img src="images/projects/kani/11_kani remodel.png" class="doc-img" alt="Kani Sheet 11" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <!-- 9. CONNORS RESIDENCE -->
+      <div class="project-block">
+        <div class="project-cover-container">
+          <img src="images/projects/connors/connors.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–009</div>
+            <div class="pr-name">Connors Residence</div>
+            <div class="pr-sub">New Residential Construction — CD & Coordination</div>
+            <div class="pr-tags">
+              <span class="pr-tag">Construction Documents</span>
+              <span class="pr-tag">Consultant Coordination</span>
+              <span class="pr-tag">Submittal Coordination</span>
+              <span class="pr-tag">Construction Correspondence</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>New Residential Construction</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2024 – Ongoing</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-red"><span class="bdot pulse"></span>In Progress</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/connors/1_Connors.png" class="doc-img" alt="Connors Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/connors/2_Connors.png" class="doc-img" alt="Connors Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/connors/3_Connors.png" class="doc-img" alt="Connors Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/connors/4_Connors.png" class="doc-img" alt="Connors Sheet 4" loading="lazy" decoding="async">
+          <img src="images/projects/connors/5_Connors.png" class="doc-img" alt="Connors Sheet 5" loading="lazy" decoding="async">
+          <img src="images/projects/connors/6_Connors.png" class="doc-img" alt="Connors Sheet 6" loading="lazy" decoding="async">
+          <img src="images/projects/connors/7_Connors.png" class="doc-img" alt="Connors Sheet 7" loading="lazy" decoding="async">
+          <img src="images/projects/connors/8_Connors.png" class="doc-img" alt="Connors Sheet 8" loading="lazy" decoding="async">
+          <img src="images/projects/connors/9_Connors.png" class="doc-img" alt="Connors Sheet 9" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <!-- 10. BAYVIEW -->
+      <div class="project-block">
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–013</div>
+            <div class="pr-name">Bayview</div>
+            <div class="pr-sub">Construction Documents — 1-Month Priority Delivery</div>
+            <div class="pr-tags">
+              <span class="pr-tag red">Priority Deadline</span>
+              <span class="pr-tag">Construction Documents</span>
+              <span class="pr-tag">Consultant Coordination</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>New Construction</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>April 2026 · 1-Month Deadline</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-red"><span class="bdot pulse"></span>Active · Priority</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11. KARTALIS RESIDENCE -->
+      <div class="project-block">
+        <div class="project-cover-container">
+          <img src="images/projects/kartalis/kartalis cover.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–011</div>
+            <div class="pr-name">Kartalis Residence</div>
+            <div class="pr-sub">New Residential Construction — Technical Details & GC Coordination</div>
+            <div class="pr-tags">
+              <span class="pr-tag">Door & Window Specs</span>
+              <span class="pr-tag">Wall & Roof Assembly</span>
+              <span class="pr-tag">Technical Details</span>
+              <span class="pr-tag">GC Coordination</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>New Residential Construction</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2024 – Ongoing</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-red"><span class="bdot pulse"></span>In Progress</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/kartalis/1_kartalis .png" class="doc-img" alt="Kartalis Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/kartalis/2_kartalis .png" class="doc-img" alt="Kartalis Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/kartalis/3_kartalis .png" class="doc-img" alt="Kartalis Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/kartalis/4_kartalis .png" class="doc-img" alt="Kartalis Sheet 4" loading="lazy" decoding="async">
+          <img src="images/projects/kartalis/5_kartalis .png" class="doc-img" alt="Kartalis Sheet 5" loading="lazy" decoding="async">
+          <img src="images/projects/kartalis/6_kartalis .png" class="doc-img" alt="Kartalis Sheet 6" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <!-- 12. NELSON'S RESIDENCE -->
+      <div class="project-block">
+        <div class="project-cover-container">
+          <img src="images/projects/nelson/Nelson.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–007</div>
+            <div class="pr-name">Nelson's Residence</div>
+            <div class="pr-sub">Retaining Wall Permit Package</div>
+            <div class="pr-tags">
+              <span class="pr-tag">Site Plan</span>
+              <span class="pr-tag">Retaining Wall Plan</span>
+              <span class="pr-tag">Elevations & Sections</span>
+              <span class="pr-tag">Permit Drawings</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>Retaining Wall Permit</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2023</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-green"><span class="bdot"></span>Permit Approved</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/nelson/1_nelson.png" class="doc-img" alt="Nelson Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/nelson/2_nelson.png" class="doc-img" alt="Nelson Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/nelson/3_nelson.png" class="doc-img" alt="Nelson Sheet 3" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <!-- 13. LOT 67 -->
+      <div class="project-block">
+        <div class="project-cover-container">
+          <img src="images/projects/lot67/lot 67.jpg" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–015</div>
+            <div class="pr-name">Lot 67</div>
+            <div class="pr-sub">Permit Set & Construction Set</div>
+            <div class="pr-tags">
+              <span class="pr-tag">Permit Set</span>
+              <span class="pr-tag">Construction Documents</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>Residential</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Monterey County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>2024</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-green"><span class="bdot"></span>Delivered</span>
+          </div>
+        </div>
+        <div class="doc-gallery">
+          <img src="images/projects/lot67/1_lot 67.png" class="doc-img" alt="Lot 67 Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/lot67/2_lot 67.png" class="doc-img" alt="Lot 67 Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/lot67/3_lot 67.png" class="doc-img" alt="Lot 67 Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/lot67/4_lot 67.png" class="doc-img" alt="Lot 67 Sheet 4" loading="lazy" decoding="async">
+          <img src="images/projects/lot67/5_lot 67.png" class="doc-img" alt="Lot 67 Sheet 5" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spacer"></div>
+
+    <!-- ORANGE COUNTY -->
     <div class="category-label" id="g-orangecounty">// Orange County · Building Division</div>
     <div class="project-list">
-      
       <div class="project-block">
-      <div class="project-cover-container">
-        <img src="images/projects/weiss/weiss.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
-      </div>
-<div class="project-row">
-        <div>
-          <div class="pr-index">SS–012</div>
-          <div class="pr-name">Weiss Emerald Bay</div>
-          <div class="pr-sub">Interior Design Coordination — Ongoing</div>
-          <div class="pr-tags">
-            <span class="pr-tag">Interior Coordination</span><span class="pr-tag">Elevation Development</span><span
-              class="pr-tag">Interior Finishes</span><span class="pr-tag">GC Correspondence</span><span
-              class="pr-tag">Records Management</span>
+        <div class="project-cover-container">
+          <img src="images/projects/weiss/weiss.png" alt="Project Cover" class="project-cover" loading="lazy" decoding="async">
+        </div>
+        <div class="project-row">
+          <div>
+            <div class="pr-index">SS–012</div>
+            <div class="pr-name">Weiss Emerald Bay</div>
+            <div class="pr-sub">Interior Design Coordination — Ongoing</div>
+            <div class="pr-tags">
+              <span class="pr-tag">Interior Coordination</span>
+              <span class="pr-tag">Elevation Development</span>
+              <span class="pr-tag">Interior Finishes</span>
+              <span class="pr-tag">GC Correspondence</span>
+              <span class="pr-tag">Records Management</span>
+            </div>
+          </div>
+          <div class="pr-col"><strong>Type</strong><span>Interior Remodel</span></div>
+          <div class="pr-col"><strong>Location</strong><span>Emerald Bay · Orange County, CA</span></div>
+          <div class="pr-col"><strong>Timeline</strong><span>Sep 2022 – Ongoing</span></div>
+          <div class="pr-status-col">
+            <span class="badge badge-red"><span class="bdot pulse"></span>Ongoing</span>
           </div>
         </div>
-        <div class="pr-col"><strong>Type</strong><span>Interior Remodel</span></div>
-        <div class="pr-col"><strong>Location</strong><span>Emerald Bay · Orange County, CA</span></div>
-        <div class="pr-col"><strong>Timeline</strong><span>Sep 2022 – Ongoing</span></div>
-        <div class="pr-status-col"><span class="badge badge-red"><span class="bdot pulse"></span>Ongoing</span></div>
-      </div>
-      <div class="doc-gallery">
-        <img src="images/projects/weiss/weiss_1.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 1" loading="lazy" decoding="async">
-        <img src="images/projects/weiss/weiss_2.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 2" loading="lazy" decoding="async">
-        <img src="images/projects/weiss/weiss_3.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 3" loading="lazy" decoding="async">
-        <img src="images/projects/weiss/weiss_4.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 4" loading="lazy" decoding="async">
-        <img src="images/projects/weiss/weiss_5.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 5" loading="lazy" decoding="async">
-        <img src="images/projects/weiss/weiss_6.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 6" loading="lazy" decoding="async">
+        <div class="doc-gallery">
+          <img src="images/projects/weiss/weiss_1.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 1" loading="lazy" decoding="async">
+          <img src="images/projects/weiss/weiss_2.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 2" loading="lazy" decoding="async">
+          <img src="images/projects/weiss/weiss_3.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 3" loading="lazy" decoding="async">
+          <img src="images/projects/weiss/weiss_4.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 4" loading="lazy" decoding="async">
+          <img src="images/projects/weiss/weiss_5.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 5" loading="lazy" decoding="async">
+          <img src="images/projects/weiss/weiss_6.png" class="doc-img" alt="Weiss Emerald Bay Documentation Sheet 6" loading="lazy" decoding="async">
+        </div>
       </div>
     </div>
 
-      </div> <!-- end project-block -->
-    <!-- EXPERTISE -->
     <div class="spacer"></div>
+
+    <!-- EXPERTISE -->
     <div class="category-label" id="g-expertise">// Expertise Demonstrated Across All Projects</div>
-    <div class="expertise-grid reveal">
+    <div class="expertise-grid">
       <div class="exp-card">
         <div class="exp-title">// Permitting</div>
         <ul class="exp-list">
-          <li>
-            <div class="exp-dot"></div>Planning permit submissions & multi-round revisions
-          </li>
-          <li>
-            <div class="exp-dot"></div>Building permit coordination & approvals
-          </li>
-          <li>
-            <div class="exp-dot"></div>Over-the-table permits
-          </li>
-          <li>
-            <div class="exp-dot"></div>ADU permitting (independent tracking)
-          </li>
-          <li>
-            <div class="exp-dot"></div>Retaining wall & deck permits
-          </li>
-          <li>
-            <div class="exp-dot"></div>Comment resolution across Palo Alto, Monterey, Carmel
-          </li>
+          <li><div class="exp-dot"></div>Planning permit submissions & multi-round revisions</li>
+          <li><div class="exp-dot"></div>Building permit coordination & approvals</li>
+          <li><div class="exp-dot"></div>Over-the-table permits</li>
+          <li><div class="exp-dot"></div>ADU permitting (independent tracking)</li>
+          <li><div class="exp-dot"></div>Retaining wall & deck permits</li>
+          <li><div class="exp-dot"></div>Comment resolution across Palo Alto, Monterey, Carmel</li>
         </ul>
       </div>
       <div class="exp-card">
         <div class="exp-title">// Compliance</div>
         <ul class="exp-list">
-          <li>
-            <div class="exp-dot"></div>Title 24 Consultant & MEP Coordination (Dolgov)
-          </li>
-          <li>
-            <div class="exp-dot"></div>ADA Requirements — coordinated & fulfilled (Charl Cherry)
-          </li>
-          <li>
-            <div class="exp-dot"></div>Green Building Inspector coordination & sign-off
-          </li>
-          <li>
-            <div class="exp-dot"></div>Geotech review letter preparation & submission
-          </li>
-          <li>
-            <div class="exp-dot"></div>Historical building requirements (Yeung, Moss)
-          </li>
-          <li>
-            <div class="exp-dot"></div>CBC / CRC / CALGreen standards
-          </li>
+          <li><div class="exp-dot"></div>Title 24 Consultant & MEP Coordination (Dolgov)</li>
+          <li><div class="exp-dot"></div>ADA Requirements — coordinated & fulfilled (Charl Cherry)</li>
+          <li><div class="exp-dot"></div>Green Building Inspector coordination & sign-off</li>
+          <li><div class="exp-dot"></div>Geotech review letter preparation & submission</li>
+          <li><div class="exp-dot"></div>Historical building requirements (Yeung, Moss)</li>
+          <li><div class="exp-dot"></div>CBC / CRC / CALGreen standards</li>
         </ul>
       </div>
       <div class="exp-card">
         <div class="exp-title">// Construction Phase</div>
         <ul class="exp-list">
-          <li>
-            <div class="exp-dot"></div>Full GC coordination during construction
-          </li>
-          <li>
-            <div class="exp-dot"></div>RFI management & resolution
-          </li>
-          <li>
-            <div class="exp-dot"></div>Submittal coordination & material approvals
-          </li>
-          <li>
-            <div class="exp-dot"></div>Structural, MEP, ADA, Geotech consultant coordination
-          </li>
-          <li>
-            <div class="exp-dot"></div>Client & principal architect liaison
-          </li>
-          <li>
-            <div class="exp-dot"></div>5 concurrent active projects (current capacity)
-          </li>
+          <li><div class="exp-dot"></div>Full GC coordination during construction</li>
+          <li><div class="exp-dot"></div>RFI management & resolution</li>
+          <li><div class="exp-dot"></div>Submittal coordination & material approvals</li>
+          <li><div class="exp-dot"></div>Structural, MEP, ADA, Geotech consultant coordination</li>
+          <li><div class="exp-dot"></div>Client & principal architect liaison</li>
+          <li><div class="exp-dot"></div>5 concurrent active projects (current capacity)</li>
         </ul>
       </div>
     </div>
 
     <div class="spacer"></div>
+    
     <div class="category-label">// Geographic Expertise</div>
-    <div class="geo-grid reveal">
+    <div class="geo-grid">
       <div class="geo-card">
         <div class="geo-name">Palo Alto</div>
         <div class="geo-count">1 Project · City of Palo Alto</div>
@@ -787,7 +803,7 @@
       </div>
       <div class="geo-card">
         <div class="geo-name">Monterey County</div>
-        <div class="geo-count">11 Projects · County Planning</div>
+        <div class="geo-count">13 Projects · County Planning</div>
         <ul class="geo-projects">
           <li>Cappo Scenic (Main House + ADU + Deck + Wall)</li>
           <li>Kani Remodel (3-Level)</li>
@@ -800,6 +816,8 @@
           <li>Lunquist Residence</li>
           <li>Kartalis Residence</li>
           <li>Bayview (Active)</li>
+          <li>McCarthy Residence</li>
+          <li>Lot 67</li>
         </ul>
       </div>
       <div class="geo-card">
@@ -813,12 +831,13 @@
 
   </div>
 
+  <!-- CTA STRIP -->
   <div class="cta-strip">
-    <div class="reveal">
+    <div>
       <div class="cta-eyebrow">Get in Touch</div>
       <h3 class="cta-title">Open for <span class="hl">Software Development</span>,<br />BIM automation, or computational design roles.</h3>
     </div>
-    <div class="cta-actions reveal">
+    <div class="cta-actions">
       <a href="mailto:chandran.s.dev@gmail.com?subject=Job%20Inquiry%20-%20BIM%20Developer" class="btn-primary">Send Email</a>
       <a href="index.html#contact" class="btn-ghost">Contact Info</a>
     </div>
@@ -836,6 +855,7 @@
   </footer>
 
   <script type="module" src="js/portfolio.js"></script>
+  <script src="js/linkedin-feed.js" defer></script>
 </body>
 
 </html>

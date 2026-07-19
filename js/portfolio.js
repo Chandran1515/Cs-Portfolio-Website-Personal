@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if(f === 'all'){
         allGroups.forEach(id => { const el = document.getElementById(id); if(el){ el.style.display=''; el.nextElementSibling && (el.nextElementSibling.style.display=''); } });
         extraEls.forEach(el => el.style.display='');
-        document.getElementById('fc').textContent='Showing all 3 software tools + 13 projects';
+        document.getElementById('fc').textContent='Showing all 3 software tools + 15 projects';
       } else {
         // Hide all groups first
         allGroups.forEach(id => {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             while(sib && !sib.id){ sib.style.display=''; sib=sib.nextElementSibling; }
           }
         });
-        const counts = {paloalto:'1 project', monterey:'11 projects', orangecounty:'1 project', bim:'3 software tools'};
+        const counts = {paloalto:'1 project', monterey:'13 projects', orangecounty:'1 project', bim:'3 software tools'};
         document.getElementById('fc').textContent = 'Showing ' + counts[f];
       }
     });

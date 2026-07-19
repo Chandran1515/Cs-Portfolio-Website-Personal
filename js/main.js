@@ -22,13 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (nav) {
       window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-          nav.style.background = 'rgba(255, 255, 255, 0.9)';
-          nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
-          nav.style.padding = '1rem 3rem';
+          nav.classList.add('scrolled');
         } else {
-          nav.style.background = 'rgba(255, 255, 255, 0.5)';
-          nav.style.boxShadow = 'none';
-          nav.style.padding = '1.5rem 3rem';
+          nav.classList.remove('scrolled');
         }
       });
     }
