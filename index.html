@@ -94,34 +94,66 @@
   <!-- 4. SHOWCASE PROJECTS -->
   <section id="work" style="background: var(--surface);">
     <div class="section-header reveal">
-      <h2 class="section-title">Featured Tools</h2>
-      <p class="section-sub">A selection of my primary software automation projects.</p>
+      <h2 class="section-title">Enterprise Software</h2>
+      <p class="section-sub">Production-grade automation tools and BIM APIs developed for AEC workflows.</p>
     </div>
-    <div class="project-gallery reveal">
-      <a href="portfolio.html" class="project-card">
-        <img src="images/projects/dolgov/cover.png" alt="SheetCraft Plugin" class="project-img" loading="lazy" decoding="async">
-        <div class="project-overlay">
-          <span class="p-cat">Revit API Sheet Setup Automation</span>
-          <span class="p-name">SheetCraft Plugin</span>
+    
+    <div class="labs-feature-box reveal">
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em; color: var(--gold); text-transform: uppercase; margin-bottom: 0.8rem;">Featured Project</div>
+        <h3 style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 800; color: var(--text); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap;">
+          CS Revit Labs
+          <span class="badge" style="font-family: var(--font-mono); font-size: 0.65rem; background: rgba(0, 240, 255, 0.1); color: var(--blue); border: 1px solid rgba(0, 240, 255, 0.2); padding: 0.2rem 0.6rem; border-radius: 10px;">Revit Add-in Suite</span>
+        </h3>
+        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem;">A professional, modeless Revit 2024 add-in compiled as a single-assembly DLL using Costura.Fody. Integrates <strong>15 automation tools</strong> across 5 core modules to coordinate models, automate documentation, spellcheck via AI, and run scripts in a live C#/Python sandbox.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.2rem; margin-bottom: 2rem;">
+          <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+            <span style="color: var(--crimson);">📂</span> Model Management
+          </div>
+          <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+            <span style="color: var(--crimson);">✍️</span> Detailing & SheetCraft
+          </div>
+          <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+            <span style="color: var(--crimson);">🔍</span> QA/QC & Spell Check
+          </div>
+          <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+            <span style="color: var(--crimson);">🤖</span> AI Dashboard & Sandbox
+          </div>
         </div>
-      </a>
-      <a href="portfolio.html" class="project-card">
-        <img src="images/projects/cappo/cover.png" alt="Revit AI Connector" class="project-img" loading="lazy" decoding="async">
-        <div class="project-overlay">
-          <span class="p-cat">Python Claude MCP Bridge</span>
-          <span class="p-name">Revit AI Connector</span>
+        
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="portfolio.html#g-bim" class="btn-primary" style="padding: 1rem 2rem; display: inline-flex; align-items: center; text-decoration: none;">Explore CS Revit Labs</a>
+          <a href="https://github.com/Chandran1515/Cs-Portfolio-Website-Personal" target="_blank" class="btn-secondary" style="padding: 1rem 2rem; display: inline-flex; align-items: center; text-decoration: none;">GitHub Repository</a>
         </div>
-      </a>
-      <a href="images/bim/sheet_craft.jpg" class="project-card">
-        <img src="images/bim/sheet_craft.jpg" alt="Batch Export Module" class="project-img" loading="lazy" decoding="async">
-        <div class="project-overlay">
-          <span class="p-cat">Multi-threaded Export Utility</span>
-          <span class="p-name">Batch Export Module</span>
+      </div>
+      
+      <div class="labs-feature-visual">
+        <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dim); margin-bottom: 1.5rem;">// ASSEMBLY DETAILS</div>
+        
+        <div style="display: flex; flex-direction: column; gap: 1rem; font-family: var(--font-mono); font-size: 0.8rem;">
+          <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-dim); padding-bottom: 0.5rem;">
+            <span style="color: var(--text-muted);">Target:</span>
+            <span style="color: var(--blue);">Revit 2024</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-dim); padding-bottom: 0.5rem;">
+            <span style="color: var(--text-muted);">Language:</span>
+            <span style="color: var(--blue);">C# (.NET 4.8)</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-dim); padding-bottom: 0.5rem;">
+            <span style="color: var(--text-muted);">Architecture:</span>
+            <span style="color: var(--gold);">Modeless DLL</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-dim); padding-bottom: 0.5rem;">
+            <span style="color: var(--text-muted);">Dependencies:</span>
+            <span style="color: var(--green);">Costura.Fody Embed</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding-bottom: 0.5rem;">
+            <span style="color: var(--text-muted);">Package size:</span>
+            <span style="color: var(--crimson);">Single DLL (Modeless)</span>
+          </div>
         </div>
-      </a>
-    </div>
-    <div style="text-align: center; margin-top: 4rem;">
-      <a href="portfolio.html" class="btn-secondary">View Complete Portfolio</a>
+      </div>
     </div>
   </section>
 
@@ -234,7 +266,7 @@
     </div>
 
     <!-- Scheduling & Deep Links -->
-    <div style="background: #ffffff; border: 1px solid var(--border-dim); border-radius: 20px; padding: 4rem 2rem; max-width: 800px; margin: 0 auto; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.03);">
+    <div style="background: var(--surface-2); border: 1px solid var(--border); border-radius: 20px; padding: 4rem 2rem; max-width: 800px; margin: 0 auto; text-align: center; box-shadow: var(--shadow-sm);">
       <h3 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1rem;">Direct Message</h3>
       <p style="color: var(--text-muted); margin-bottom: 2rem;">Available for interviews and technical discussions globally.</p>
       

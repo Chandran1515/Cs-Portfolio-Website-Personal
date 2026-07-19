@@ -480,3 +480,52 @@ section {
   box-shadow: 0 10px 30px rgba(143, 0, 255, 0.1);
 }
 
+/* CS Revit Labs Feature Card on Home Page */
+.labs-feature-box {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.labs-feature-visual {
+  background: rgba(4, 4, 6, 0.4);
+  border: 1px solid var(--border-dim);
+  border-radius: var(--radius-md);
+  padding: 2.2rem;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.labs-feature-visual::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--border-dim) 1px,transparent 1px), linear-gradient(90deg, var(--border-dim) 1px,transparent 1px);
+  background-size: 15px 15px;
+  opacity: 0.2;
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .labs-feature-box {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+  }
+  .labs-feature-visual {
+    min-height: auto;
+    padding: 1.5rem;
+  }
+}
+
