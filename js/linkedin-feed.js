@@ -233,12 +233,6 @@ function initPortfolioVideoEmbeds() {
     if (configPost && configPost.embedUrl && configPost.embedUrl.trim() !== "") {
       // Clear contents and insert iframe
       area.innerHTML = `<iframe src="${configPost.embedUrl}" allowfullscreen title="${configPost.title}" style="width:100%; height:100%; border:none; z-index:5; position:absolute; top:0; left:0;"></iframe>`;
-    } else if (configPost) {
-      // Setup a dynamic fallback link on click
-      area.style.cursor = "pointer";
-      area.addEventListener("click", () => {
-        window.open(configPost.postUrl, "_blank");
-      });
     }
   });
 }

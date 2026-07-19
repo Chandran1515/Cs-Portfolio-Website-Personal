@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Open lightbox
-    document.querySelectorAll('.doc-img, .project-cover').forEach(img => {
+    document.querySelectorAll('.doc-img, .project-cover, .labs-tool-img').forEach(img => {
       img.addEventListener('click', (e) => {
         e.stopPropagation();
         resetTransform();
