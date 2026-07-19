@@ -126,9 +126,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Open lightbox
-    document.querySelectorAll('.doc-img, .project-cover, .labs-tool-img').forEach(img => {
-      img.addEventListener('click', (e) => {
+    document.querySelectorAll('.doc-img, .project-cover, .labs-tool-img, .labs-tool-img-container, .labs-tool-video-area').forEach(element => {
+      element.addEventListener('click', (e) => {
         e.stopPropagation();
+        let img = element;
+        if (element.tagName.toLowerCase() !== 'img') {
+          img = element.querySelector('img');
+        }
+        if (!img || !img.src) return;
+        
         resetTransform();
         lightboxImg.src = img.src;
         lightbox.classList.add('active');

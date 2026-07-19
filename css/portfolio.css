@@ -764,25 +764,25 @@ em { font-weight: 500; }
   font-size: 0.75rem;
 }
 .labs-tool-video-area {
-  height: 160px;
+  height: 220px;
   background: #08080c;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: auto;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   transition: border-color 0.3s;
 }
 .labs-tool-img-container {
-  height: 160px;
+  height: 220px;
   background: #08080c;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  margin-top: 1rem;
+  margin-top: auto;
   position: relative;
   overflow: hidden;
   cursor: pointer;
