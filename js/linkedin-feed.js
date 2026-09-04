@@ -9,7 +9,7 @@ const LINKEDIN_FEED_CONFIG = {
   profileUrl: "https://www.linkedin.com/in/ar-chandran-shanmugam-421b7b149",
   
   // Date when you started your professional career (used to auto-calculate years of experience)
-  careerStartDate: "2017-09-01",
+  careerStartDate: "2018-06-01",
   
   // Date when you started working in California (used to auto-calculate California experience)
   californiaStartDate: "2022-09-01",
