@@ -96,333 +96,15 @@
   <!-- FILTER BUTTONS -->
   <div class="filters">
     <button class="filter-btn active" data-filter="all">All Work</button>
-    <button class="filter-btn" data-filter="bim">Software Tools</button>
     <button class="filter-btn" data-filter="paloalto">Palo Alto</button>
     <button class="filter-btn" data-filter="monterey">Monterey County</button>
     <button class="filter-btn" data-filter="orangecounty">Orange County</button>
+    <button class="filter-btn" data-filter="bim">Software Tools</button>
     <span class="filter-count" id="fc">Showing CS Revit Labs (15 tools) + 15 projects</span>
   </div>
 
   <!-- PORTFOLIO PROJECTS GRID SECTION -->
   <div class="portfolio-section">
-
-    <!-- BIM TOOLS -->
-    <div class="category-label" id="g-bim">// BIM Automation & Software Tools</div>
-    
-    <div class="labs-wrapper">
-      <!-- Intro & Metadata -->
-      <div class="labs-intro">
-        <div class="labs-title-block">
-          <h3>CS Revit Labs <span class="badge">Autodesk Revit 2024</span></h3>
-          <p class="labs-description">An enterprise-grade automation add-in suite developed to streamline model coordination, accelerate construction documentation, enforce graphical quality control, and integrate AI reasoning into BIM environments.</p>
-          
-          <div class="labs-tech-grid">
-            <div class="labs-tech-category">
-              <span class="labs-tech-label">Language & Framework</span>
-              <div class="labs-tech-tags">
-                <span class="labs-tech-pill highlight">C# (7.3)</span>
-                <span class="labs-tech-pill highlight">.NET Framework 4.8</span>
-                <span class="labs-tech-pill">WPF (XAML)</span>
-              </div>
-            </div>
-            <div class="labs-tech-category">
-              <span class="labs-tech-label">APIs & Integrations</span>
-              <div class="labs-tech-tags">
-                <span class="labs-tech-pill highlight">Revit API 2024</span>
-                <span class="labs-tech-pill highlight">Google Gemini API</span>
-                <span class="labs-tech-pill">Newtonsoft.Json</span>
-                <span class="labs-tech-pill">PDFsharp</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="labs-architecture-card">
-          <div class="labs-arch-title">// Architecture</div>
-          <div class="labs-arch-body">
-            Modeless single-assembly DLL. Employs <strong>Costura.Fody</strong> to embed all references and dependencies into the C# binary. This simplifies enterprise deployment down to just two files: <code>CSRevitLabs.dll</code> and <code>CSRevitLabs.addin</code>.
-          </div>
-        </div>
-      </div>
-      
-      <!-- Ribbon Preview -->
-      <div class="labs-ribbon-preview" style="margin-bottom: 3.5rem; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; text-align: center; box-shadow: var(--shadow-sm); overflow: hidden;">
-        <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dim); text-align: left; margin-bottom: 1rem; text-transform: uppercase;">// CS Revit Labs Ribbon Interface (Autodesk Revit Add-in Tab)</div>
-        <img src="images/bim/revit_ribbon.jpg" alt="CS Revit Labs Ribbon Interface" class="project-cover" style="width: 100%; height: auto; border-radius: var(--radius-sm); border: 1px solid var(--border-dim); display: block; object-fit: contain;">
-      </div>
-      
-      <!-- Core Modules -->
-      <div class="labs-modules-grid">
-        
-        <!-- MODULE 1: Model Management & Setup -->
-        <div class="labs-module-row">
-          <div class="labs-module-header">
-            <span class="labs-module-icon">📂</span>
-            <span class="labs-module-name">1. Model Management & Setup</span>
-          </div>
-          <div class="labs-module-tools-grid">
-            <!-- Create Backup -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Create Backup</div>
-              <div class="labs-tool-purpose">Model Durability</div>
-              <p class="labs-tool-desc">Safe, single-click detached Revit model backups with automatic timestamping.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Cloud model safety gates (blocks on BIM 360/ACC)</li>
-                <li class="labs-tool-feature-item">Triggers central file sync warning alerts</li>
-              </ul>
-            </div>
-            
-            <!-- Batch Worksets -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Batch Worksets</div>
-              <div class="labs-tool-purpose">Project Setup</div>
-              <p class="labs-tool-desc">Automatic setup of standard corporate workset structures.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Instantly creates Arch, Struct, MEP, and Site worksets</li>
-                <li class="labs-tool-feature-item">Built-in duplicate name prevention</li>
-                <li class="labs-tool-feature-item">Supports custom comma-separated list entries</li>
-              </ul>
-              <div class="labs-tool-img-container">
-                <img src="images/projects/CS Revit Labs/Batch workset creator.webp" alt="Batch Worksets Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-            
-            <!-- Coordination Sets -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Coordination Sets</div>
-              <div class="labs-tool-purpose">Clash Detection Setup</div>
-              <p class="labs-tool-desc">Automated setup of 2D/3D interdisciplinary backgrounds for clash detection.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Clones sheets and filters heavy architectural assets</li>
-                <li class="labs-tool-feature-item">Overrides grid displays to high-visibility Blue</li>
-                <li class="labs-tool-feature-item">Color-codes structural (Red) and MEP (Red/Blue) elements with transparency</li>
-              </ul>
-              <div class="labs-tool-img-container">
-                <img src="images/projects/CS Revit Labs/Coordination set generator.webp" alt="Coordination Sets Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-            
-            <!-- Family Browser -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Family Browser</div>
-              <div class="labs-tool-purpose">Content Management</div>
-              <p class="labs-tool-desc">A modeless search and management panel to load, place, and export Revit families (.rfa).</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Visual thumbnail gallery card toggle</li>
-                <li class="labs-tool-feature-item">Favorite list synchronization across projects</li>
-                <li class="labs-tool-feature-item">Background extraction engine sorting families by category folders</li>
-              </ul>
-              <div class="labs-tool-img-container">
-                <img src="images/projects/CS Revit Labs/Family Browser.webp" alt="Family Browser Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- MODULE 2: Documentation & Annotation -->
-        <div class="labs-module-row">
-          <div class="labs-module-header">
-            <span class="labs-module-icon">✍️</span>
-            <span class="labs-module-name">2. Documentation & Annotation</span>
-          </div>
-          <div class="labs-module-tools-grid">
-            <!-- SheetCraft -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">SheetCraft</div>
-              <div class="labs-tool-purpose">Detailing Automation</div>
-              <p class="labs-tool-desc">Bulk-generates floor plans and four-way interior elevations for selected rooms.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Evaluates room geometry to auto-orient views</li>
-                <li class="labs-tool-feature-item">Generates white masking regions to hide extraneous background objects</li>
-              </ul>
-              <div class="labs-tool-video-area bim-video-area" data-tool-id="sheetcraft">
-                <img src="images/projects/CS Revit Labs/Sheet craft .webp" alt="SheetCraft Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-            
-            <!-- Keynote Browser -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Keynote Browser</div>
-              <div class="labs-tool-purpose">Annotation Harvesting</div>
-              <p class="labs-tool-desc">Harvests sheet/keyed notes from text components.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Uses Regex to extract numbered note lists</li>
-                <li class="labs-tool-feature-item">Scrubs standard strings (e.g. "NOT USED")</li>
-                <li class="labs-tool-feature-item">Exports databases to CSV and compiles legends</li>
-              </ul>
-              <div class="labs-tool-img-container">
-                <img src="images/projects/CS Revit Labs/Keynote browser.webp" alt="Keynote Browser Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-            
-            <!-- Detail Browser -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Detail Browser</div>
-              <div class="labs-tool-purpose">Standard Library</div>
-              <p class="labs-tool-desc">Shared team detail database manager to search and preview standard detail drawings.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Tracks detail sources with metadata stamping</li>
-                <li class="labs-tool-feature-item">Deep-copies view contents to target sheets</li>
-                <li class="labs-tool-feature-item">Single-click "Refresh from Source" checks</li>
-              </ul>
-            </div>
-            
-            <!-- Auto Tagging -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Auto Tagging</div>
-              <div class="labs-tool-purpose">Plan Production</div>
-              <p class="labs-tool-desc">Fully automated clockwise tagging of architectural floor plans.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Computes project center to sort items clockwise</li>
-                <li class="labs-tool-feature-item">Applies collision avoidance offsets</li>
-                <li class="labs-tool-feature-item">Highlights new tags in Magenta for validation</li>
-              </ul>
-              <div class="labs-tool-img-container">
-                <img src="images/projects/CS Revit Labs/Auto tagging.webp" alt="Auto Tagging Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- MODULE 3: Graphic & Quality Control (QA/QC) -->
-        <div class="labs-module-row">
-          <div class="labs-module-header">
-            <span class="labs-module-icon">🔍</span>
-            <span class="labs-module-name">3. Graphic & Quality Control (QA/QC)</span>
-          </div>
-          <div class="labs-module-tools-grid">
-            <!-- Graphic QC Check -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Graphic QC Check</div>
-              <div class="labs-tool-purpose">Drafting Standards</div>
-              <p class="labs-tool-desc">Highlights sheet elements using temporary color overrides to verify draft quality before printing.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Bypasses view templates via temporary properties</li>
-                <li class="labs-tool-feature-item">Colorizes Dimensions (Red) and Text Notes (Green)</li>
-                <li class="labs-tool-feature-item">Colorizes Section Lines (Orange) and Detail Items (Magenta)</li>
-              </ul>
-              <div class="labs-tool-img-container">
-                <img src="images/projects/CS Revit Labs/Graphic QC Checker.webp" alt="Graphic QC Check Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-            
-            <!-- Project Spell Check -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Project Spell Check</div>
-              <div class="labs-tool-purpose">AI Text Auditing</div>
-              <p class="labs-tool-desc">AI-powered spelling, grammar, and construction standards checker.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Integrates Google Gemini (or local LLMs via port 1234)</li>
-                <li class="labs-tool-feature-item">Converts full-text expansions to standard abbreviations (e.g. "A.F.F.")</li>
-                <li class="labs-tool-feature-item">Saves user exclusions to persistent ignore lists</li>
-              </ul>
-              <div class="labs-tool-img-container">
-                <img src="images/projects/CS Revit Labs/Check speeling & grammer.webp" alt="Project Spell Check Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-            
-            <!-- Line Style Organizer -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Line Style Organizer</div>
-              <div class="labs-tool-purpose">Database Cleanup</div>
-              <p class="labs-tool-desc">Identifies, merges, and standardizes custom line style subcategories.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Detects duplicate configurations</li>
-                <li class="labs-tool-feature-item">Allows teams to designate a "kept" line style</li>
-                <li class="labs-tool-feature-item">Standardizes custom line names to <code>{Weight}_PEN_{Color}_{Pattern}</code></li>
-              </ul>
-              <div class="labs-tool-img-container">
-                <img src="images/projects/CS Revit Labs/Line Style O.webp" alt="Line Style Organizer Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- MODULE 4: MEP & Layout Automation -->
-        <div class="labs-module-row">
-          <div class="labs-module-header">
-            <span class="labs-module-icon">🛠️</span>
-            <span class="labs-module-name">4. MEP & Layout Automation</span>
-          </div>
-          <div class="labs-module-tools-grid">
-            <!-- Plumbing Sets & Appliance Sets -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Plumbing & Appliance Sets</div>
-              <div class="labs-tool-purpose">Layout Coordination</div>
-              <p class="labs-tool-desc">Places dummy family groups, schedules, and tags in rooms to manage layout packages.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Configures placement heights and level offsets</li>
-                <li class="labs-tool-feature-item">Schedules fixture components automatically</li>
-                <li class="labs-tool-feature-item">Sorts room equipment layouts sequentially</li>
-              </ul>
-              <div class="labs-tool-img-container" style="margin-top: auto; height: 180px; margin-bottom: 0.8rem;">
-                <img src="images/projects/CS Revit Labs/Plumbling schedule .webp" alt="Plumbing Sets Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-              <div class="labs-tool-img-container" style="margin-top: 0; height: 180px;">
-                <img src="images/projects/CS Revit Labs/Appliance auto placer.webp" alt="Appliance Sets Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- MODULE 5: AI Integrations & Developer Tools -->
-        <div class="labs-module-row">
-          <div class="labs-module-header">
-            <span class="labs-module-icon">🤖</span>
-            <span class="labs-module-name">5. AI Integrations & Developer Tools</span>
-          </div>
-          <div class="labs-module-tools-grid">
-            <!-- Create Print Set -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Create Print Set</div>
-              <div class="labs-tool-purpose">Documentation Delivery</div>
-              <p class="labs-tool-desc">Batch export sheets to PDF/DWG, cover sheet schedule comparison, and consultant PDF validation.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Auto-filters sheet lists by revision parameters</li>
-                <li class="labs-tool-feature-item">Compares sheet count against saved schedules</li>
-                <li class="labs-tool-feature-item">Integrates consultant PDFs into unified main export package</li>
-              </ul>
-              <div class="labs-tool-video-area bim-video-area" data-tool-id="batchexport">
-                <img src="images/projects/CS Revit Labs/Batch export.webp" alt="Create Print Set Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-            
-            <!-- AI Dashboard (Control Center) -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">AI Dashboard</div>
-              <div class="labs-tool-purpose">Control Center</div>
-              <p class="labs-tool-desc">Central hub to manage background updates, API settings, and telemetry.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Monitors local MCP Bridge status (Claude ↔ Revit)</li>
-                <li class="labs-tool-feature-item">Maps API key settings securely</li>
-                <li class="labs-tool-feature-item">Keeps real-time logs of background spelling modifications</li>
-              </ul>
-              <div class="labs-tool-video-area bim-video-area" data-tool-id="aiconnector">
-                <img src="images/projects/CS Revit Labs/AI Control centre.webp" alt="AI Dashboard Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-            
-            <!-- Code Sandbox -->
-            <div class="labs-tool-card">
-              <div class="labs-tool-name">Code Sandbox</div>
-              <div class="labs-tool-purpose">Developer Scripting</div>
-              <p class="labs-tool-desc">Modeless developer script manager.</p>
-              <ul class="labs-tool-features">
-                <li class="labs-tool-feature-item">Monospace editor with dynamic syntax hints</li>
-                <li class="labs-tool-feature-item">C# and IronPython compilers</li>
-                <li class="labs-tool-feature-item">Executes scripts directly against the active Revit DB</li>
-              </ul>
-              <div class="labs-tool-img-container">
-                <img src="images/projects/CS Revit Labs/sand box.webp" alt="Code Sandbox Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-
-    <div class="spacer"></div>
 
     <!-- PALO ALTO -->
     <div class="category-label" id="g-paloalto">// Palo Alto · City of Palo Alto Planning & Building Dept.</div>
@@ -1026,6 +708,324 @@
           <img src="images/projects/weiss/weiss_5.png" class="doc-img" alt="Orange County Residential Interior Documentation Sheet 5" loading="lazy" decoding="async">
           <img src="images/projects/weiss/weiss_6.png" class="doc-img" alt="Orange County Residential Interior Documentation Sheet 6" loading="lazy" decoding="async">
         </div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <!-- BIM TOOLS -->
+    <div class="category-label" id="g-bim">// BIM Automation & Software Tools</div>
+    
+    <div class="labs-wrapper">
+      <!-- Intro & Metadata -->
+      <div class="labs-intro">
+        <div class="labs-title-block">
+          <h3>CS Revit Labs <span class="badge">Autodesk Revit 2024</span></h3>
+          <p class="labs-description">An enterprise-grade automation add-in suite developed to streamline model coordination, accelerate construction documentation, enforce graphical quality control, and integrate AI reasoning into BIM environments.</p>
+          
+          <div class="labs-tech-grid">
+            <div class="labs-tech-category">
+              <span class="labs-tech-label">Language & Framework</span>
+              <div class="labs-tech-tags">
+                <span class="labs-tech-pill highlight">C# (7.3)</span>
+                <span class="labs-tech-pill highlight">.NET Framework 4.8</span>
+                <span class="labs-tech-pill">WPF (XAML)</span>
+              </div>
+            </div>
+            <div class="labs-tech-category">
+              <span class="labs-tech-label">APIs & Integrations</span>
+              <div class="labs-tech-tags">
+                <span class="labs-tech-pill highlight">Revit API 2024</span>
+                <span class="labs-tech-pill highlight">Google Gemini API</span>
+                <span class="labs-tech-pill">Newtonsoft.Json</span>
+                <span class="labs-tech-pill">PDFsharp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="labs-architecture-card">
+          <div class="labs-arch-title">// Architecture</div>
+          <div class="labs-arch-body">
+            Modeless single-assembly DLL. Employs <strong>Costura.Fody</strong> to embed all references and dependencies into the C# binary. This simplifies enterprise deployment down to just two files: <code>CSRevitLabs.dll</code> and <code>CSRevitLabs.addin</code>.
+          </div>
+        </div>
+      </div>
+      
+      <!-- Ribbon Preview -->
+      <div class="labs-ribbon-preview" style="margin-bottom: 3.5rem; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; text-align: center; box-shadow: var(--shadow-sm); overflow: hidden;">
+        <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dim); text-align: left; margin-bottom: 1rem; text-transform: uppercase;">// CS Revit Labs Ribbon Interface (Autodesk Revit Add-in Tab)</div>
+        <img src="images/bim/revit_ribbon.jpg" alt="CS Revit Labs Ribbon Interface" class="project-cover" style="width: 100%; height: auto; border-radius: var(--radius-sm); border: 1px solid var(--border-dim); display: block; object-fit: contain;">
+      </div>
+      
+      <!-- Core Modules -->
+      <div class="labs-modules-grid">
+        
+        <!-- MODULE 1: Model Management & Setup -->
+        <div class="labs-module-row">
+          <div class="labs-module-header">
+            <span class="labs-module-icon">📂</span>
+            <span class="labs-module-name">1. Model Management & Setup</span>
+          </div>
+          <div class="labs-module-tools-grid">
+            <!-- Create Backup -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Create Backup</div>
+              <div class="labs-tool-purpose">Model Durability</div>
+              <p class="labs-tool-desc">Safe, single-click detached Revit model backups with automatic timestamping.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Cloud model safety gates (blocks on BIM 360/ACC)</li>
+                <li class="labs-tool-feature-item">Triggers central file sync warning alerts</li>
+              </ul>
+            </div>
+            
+            <!-- Batch Worksets -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Batch Worksets</div>
+              <div class="labs-tool-purpose">Project Setup</div>
+              <p class="labs-tool-desc">Automatic setup of standard corporate workset structures.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Instantly creates Arch, Struct, MEP, and Site worksets</li>
+                <li class="labs-tool-feature-item">Built-in duplicate name prevention</li>
+                <li class="labs-tool-feature-item">Supports custom comma-separated list entries</li>
+              </ul>
+              <div class="labs-tool-img-container">
+                <img src="images/projects/CS Revit Labs/Batch workset creator.webp" alt="Batch Worksets Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+            
+            <!-- Coordination Sets -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Coordination Sets</div>
+              <div class="labs-tool-purpose">Clash Detection Setup</div>
+              <p class="labs-tool-desc">Automated setup of 2D/3D interdisciplinary backgrounds for clash detection.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Clones sheets and filters heavy architectural assets</li>
+                <li class="labs-tool-feature-item">Overrides grid displays to high-visibility Blue</li>
+                <li class="labs-tool-feature-item">Color-codes structural (Red) and MEP (Red/Blue) elements with transparency</li>
+              </ul>
+              <div class="labs-tool-img-container">
+                <img src="images/projects/CS Revit Labs/Coordination set generator.webp" alt="Coordination Sets Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+            
+            <!-- Family Browser -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Family Browser</div>
+              <div class="labs-tool-purpose">Content Management</div>
+              <p class="labs-tool-desc">A modeless search and management panel to load, place, and export Revit families (.rfa).</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Visual thumbnail gallery card toggle</li>
+                <li class="labs-tool-feature-item">Favorite list synchronization across projects</li>
+                <li class="labs-tool-feature-item">Background extraction engine sorting families by category folders</li>
+              </ul>
+              <div class="labs-tool-img-container">
+                <img src="images/projects/CS Revit Labs/Family Browser.webp" alt="Family Browser Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- MODULE 2: Documentation & Annotation -->
+        <div class="labs-module-row">
+          <div class="labs-module-header">
+            <span class="labs-module-icon">✍️</span>
+            <span class="labs-module-name">2. Documentation & Annotation</span>
+          </div>
+          <div class="labs-module-tools-grid">
+            <!-- SheetCraft -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">SheetCraft</div>
+              <div class="labs-tool-purpose">Detailing Automation</div>
+              <p class="labs-tool-desc">Bulk-generates floor plans and four-way interior elevations for selected rooms.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Evaluates room geometry to auto-orient views</li>
+                <li class="labs-tool-feature-item">Generates white masking regions to hide extraneous background objects</li>
+              </ul>
+              <div class="labs-tool-video-area bim-video-area" data-tool-id="sheetcraft">
+                <img src="images/projects/CS Revit Labs/Sheet craft .webp" alt="SheetCraft Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+            
+            <!-- Keynote Browser -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Keynote Browser</div>
+              <div class="labs-tool-purpose">Annotation Harvesting</div>
+              <p class="labs-tool-desc">Harvests sheet/keyed notes from text components.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Uses Regex to extract numbered note lists</li>
+                <li class="labs-tool-feature-item">Scrubs standard strings (e.g. "NOT USED")</li>
+                <li class="labs-tool-feature-item">Exports databases to CSV and compiles legends</li>
+              </ul>
+              <div class="labs-tool-img-container">
+                <img src="images/projects/CS Revit Labs/Keynote browser.webp" alt="Keynote Browser Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+            
+            <!-- Detail Browser -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Detail Browser</div>
+              <div class="labs-tool-purpose">Standard Library</div>
+              <p class="labs-tool-desc">Shared team detail database manager to search and preview standard detail drawings.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Tracks detail sources with metadata stamping</li>
+                <li class="labs-tool-feature-item">Deep-copies view contents to target sheets</li>
+                <li class="labs-tool-feature-item">Single-click "Refresh from Source" checks</li>
+              </ul>
+            </div>
+            
+            <!-- Auto Tagging -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Auto Tagging</div>
+              <div class="labs-tool-purpose">Plan Production</div>
+              <p class="labs-tool-desc">Fully automated clockwise tagging of architectural floor plans.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Computes project center to sort items clockwise</li>
+                <li class="labs-tool-feature-item">Applies collision avoidance offsets</li>
+                <li class="labs-tool-feature-item">Highlights new tags in Magenta for validation</li>
+              </ul>
+              <div class="labs-tool-img-container">
+                <img src="images/projects/CS Revit Labs/Auto tagging.webp" alt="Auto Tagging Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- MODULE 3: Graphic & Quality Control (QA/QC) -->
+        <div class="labs-module-row">
+          <div class="labs-module-header">
+            <span class="labs-module-icon">🔍</span>
+            <span class="labs-module-name">3. Graphic & Quality Control (QA/QC)</span>
+          </div>
+          <div class="labs-module-tools-grid">
+            <!-- Graphic QC Check -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Graphic QC Check</div>
+              <div class="labs-tool-purpose">Drafting Standards</div>
+              <p class="labs-tool-desc">Highlights sheet elements using temporary color overrides to verify draft quality before printing.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Bypasses view templates via temporary properties</li>
+                <li class="labs-tool-feature-item">Colorizes Dimensions (Red) and Text Notes (Green)</li>
+                <li class="labs-tool-feature-item">Colorizes Section Lines (Orange) and Detail Items (Magenta)</li>
+              </ul>
+              <div class="labs-tool-img-container">
+                <img src="images/projects/CS Revit Labs/Graphic QC Checker.webp" alt="Graphic QC Check Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+            
+            <!-- Project Spell Check -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Project Spell Check</div>
+              <div class="labs-tool-purpose">AI Text Auditing</div>
+              <p class="labs-tool-desc">AI-powered spelling, grammar, and construction standards checker.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Integrates Google Gemini (or local LLMs via port 1234)</li>
+                <li class="labs-tool-feature-item">Converts full-text expansions to standard abbreviations (e.g. "A.F.F.")</li>
+                <li class="labs-tool-feature-item">Saves user exclusions to persistent ignore lists</li>
+              </ul>
+              <div class="labs-tool-img-container">
+                <img src="images/projects/CS Revit Labs/Check speeling & grammer.webp" alt="Project Spell Check Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+            
+            <!-- Line Style Organizer -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Line Style Organizer</div>
+              <div class="labs-tool-purpose">Database Cleanup</div>
+              <p class="labs-tool-desc">Identifies, merges, and standardizes custom line style subcategories.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Detects duplicate configurations</li>
+                <li class="labs-tool-feature-item">Allows teams to designate a "kept" line style</li>
+                <li class="labs-tool-feature-item">Standardizes custom line names to <code>{Weight}_PEN_{Color}_{Pattern}</code></li>
+              </ul>
+              <div class="labs-tool-img-container">
+                <img src="images/projects/CS Revit Labs/Line Style O.webp" alt="Line Style Organizer Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- MODULE 4: MEP & Layout Automation -->
+        <div class="labs-module-row">
+          <div class="labs-module-header">
+            <span class="labs-module-icon">🛠️</span>
+            <span class="labs-module-name">4. MEP & Layout Automation</span>
+          </div>
+          <div class="labs-module-tools-grid">
+            <!-- Plumbing Sets & Appliance Sets -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Plumbing & Appliance Sets</div>
+              <div class="labs-tool-purpose">Layout Coordination</div>
+              <p class="labs-tool-desc">Places dummy family groups, schedules, and tags in rooms to manage layout packages.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Configures placement heights and level offsets</li>
+                <li class="labs-tool-feature-item">Schedules fixture components automatically</li>
+                <li class="labs-tool-feature-item">Sorts room equipment layouts sequentially</li>
+              </ul>
+              <div class="labs-tool-img-container" style="margin-top: auto; height: 180px; margin-bottom: 0.8rem;">
+                <img src="images/projects/CS Revit Labs/Plumbling schedule .webp" alt="Plumbing Sets Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+              <div class="labs-tool-img-container" style="margin-top: 0; height: 180px;">
+                <img src="images/projects/CS Revit Labs/Appliance auto placer.webp" alt="Appliance Sets Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- MODULE 5: AI Integrations & Developer Tools -->
+        <div class="labs-module-row">
+          <div class="labs-module-header">
+            <span class="labs-module-icon">🤖</span>
+            <span class="labs-module-name">5. AI Integrations & Developer Tools</span>
+          </div>
+          <div class="labs-module-tools-grid">
+            <!-- Create Print Set -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Create Print Set</div>
+              <div class="labs-tool-purpose">Documentation Delivery</div>
+              <p class="labs-tool-desc">Batch export sheets to PDF/DWG, cover sheet schedule comparison, and consultant PDF validation.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Auto-filters sheet lists by revision parameters</li>
+                <li class="labs-tool-feature-item">Compares sheet count against saved schedules</li>
+                <li class="labs-tool-feature-item">Integrates consultant PDFs into unified main export package</li>
+              </ul>
+              <div class="labs-tool-video-area bim-video-area" data-tool-id="batchexport">
+                <img src="images/projects/CS Revit Labs/Batch export.webp" alt="Create Print Set Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+            
+            <!-- AI Dashboard (Control Center) -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">AI Dashboard</div>
+              <div class="labs-tool-purpose">Control Center</div>
+              <p class="labs-tool-desc">Central hub to manage background updates, API settings, and telemetry.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Monitors local MCP Bridge status (Claude ↔ Revit)</li>
+                <li class="labs-tool-feature-item">Maps API key settings securely</li>
+                <li class="labs-tool-feature-item">Keeps real-time logs of background spelling modifications</li>
+              </ul>
+              <div class="labs-tool-video-area bim-video-area" data-tool-id="aiconnector">
+                <img src="images/projects/CS Revit Labs/AI Control centre.webp" alt="AI Dashboard Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+            
+            <!-- Code Sandbox -->
+            <div class="labs-tool-card">
+              <div class="labs-tool-name">Code Sandbox</div>
+              <div class="labs-tool-purpose">Developer Scripting</div>
+              <p class="labs-tool-desc">Modeless developer script manager.</p>
+              <ul class="labs-tool-features">
+                <li class="labs-tool-feature-item">Monospace editor with dynamic syntax hints</li>
+                <li class="labs-tool-feature-item">C# and IronPython compilers</li>
+                <li class="labs-tool-feature-item">Executes scripts directly against the active Revit DB</li>
+              </ul>
+              <div class="labs-tool-img-container">
+                <img src="images/projects/CS Revit Labs/sand box.webp" alt="Code Sandbox Tool Preview" class="labs-tool-img" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
 
