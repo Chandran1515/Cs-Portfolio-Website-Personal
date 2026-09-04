@@ -146,16 +146,17 @@ nav.scrolled {
 .nav-cta {
   font-size: 0.85rem !important;
   font-weight: 600 !important;
-  color: #040406 !important;
+  color: var(--bg) !important;
   background: var(--text);
   border-radius: 40px;
   padding: 0.6rem 1.4rem;
-  transition: transform 0.2s, box-shadow 0.2s, background 0.2s !important;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s !important;
 }
 .nav-cta:hover { 
   transform: translateY(-2px); 
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); 
-  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3); 
+  background: var(--crimson) !important;
+  color: #ffffff !important;
 }
 .nav-back {
   font-size: 0.85rem;

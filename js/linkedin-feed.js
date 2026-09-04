@@ -14,7 +14,7 @@ const LINKEDIN_FEED_CONFIG = {
   // Date when you started working in California (used to auto-calculate California experience)
   californiaStartDate: "2022-09-01",
   // Date when you finished working in California (set to null if currently ongoing)
-  californiaEndDate: "2026-04-30",
+  californiaEndDate: null,
 
   // Option 1: Native Video Embeds (Highest performance & responsive look)
   // Fill in the 'embedUrl' with the URL from LinkedIn's 'Embed this post' iframe src.

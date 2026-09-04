@@ -1,6 +1,6 @@
 /* PORTFOLIO HEADER */
 .page-header { 
-  padding: 8rem 3rem 4rem; 
+  padding: 10rem 3rem 4rem; 
   position: relative; 
   overflow: hidden; 
   border-bottom: 1px solid var(--border); 
@@ -86,13 +86,13 @@
 
 /* FILTERS */
 .filters { 
-  padding: 1.5rem 3rem; 
+  padding: 1rem 3rem; 
   display: flex; 
   gap: 0.6rem; 
   align-items: center; 
   flex-wrap: wrap; 
   border-bottom: 1px solid var(--border); 
-  background: rgba(4, 4, 6, 0.8); 
+  background: var(--nav-bg); 
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   position: sticky; 
@@ -105,8 +105,8 @@
   font-weight: 600; 
   letter-spacing: 0.1em; 
   text-transform: uppercase; 
-  color: var(--text-muted); 
-  background: none; 
+  color: var(--text); 
+  background: var(--surface); 
   border: 1px solid var(--border); 
   border-radius: 30px;
   padding: 0.6rem 1.4rem; 
@@ -114,14 +114,14 @@
   transition: all 0.25s; 
 }
 .filter-btn:hover { 
-  border-color: var(--text-muted); 
-  color: var(--text); 
-  background: rgba(255, 255, 255, 0.03);
+  border-color: var(--crimson); 
+  color: var(--crimson); 
+  background: var(--surface-2);
 }
 .filter-btn.active { 
-  background: var(--text); 
-  color: var(--bg); 
-  border-color: var(--text); 
+  background: var(--crimson); 
+  color: #ffffff; 
+  border-color: var(--crimson); 
 }
 .filter-count { 
   font-family: var(--font-mono); 
