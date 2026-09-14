@@ -11,6 +11,9 @@ class ATSResumeCanvas(canvas.Canvas):
     """Canvas for single-column ATS resume with clean page numbers."""
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.setTitle("Ar. Chandran Shanmugam - Resume")
+        self.setAuthor("Ar. Chandran Shanmugam")
+        self.setSubject("Job Captain & Architectural Specialist Resume")
         self._saved_page_states = []
 
     def showPage(self):
@@ -59,7 +62,10 @@ def build_resume_pdf():
         leftMargin=36,
         rightMargin=36,
         topMargin=36,
-        bottomMargin=42
+        bottomMargin=42,
+        title="Ar. Chandran Shanmugam - Resume",
+        author="Ar. Chandran Shanmugam",
+        subject="Job Captain & Architectural Specialist Resume"
     )
 
     styles = getSampleStyleSheet()
@@ -258,8 +264,14 @@ def build_resume_pdf():
     story.append(Paragraph("• <b>Registered Architect</b> — Council of Architecture (COA), India", bullet_style))
     story.append(Paragraph("• <b>LEED Green Associate</b> (Pursuing / Sustainable Building Certification)", bullet_style))
 
-    doc.build(story, canvasmaker=ATSResumeCanvas)
-    print(f"PDF generated successfully at {pdf_path}")
+    try:
+        doc.build(story, canvasmaker=ATSResumeCanvas)
+        print(f"PDF generated successfully at {pdf_path}")
+    except PermissionError:
+        fallback_path = os.path.join(docs_dir, "Ar_Chandran_Shanmugam_Resume_v2.pdf")
+        doc.filename = fallback_path
+        doc.build(story, canvasmaker=ATSResumeCanvas)
+        print(f"PDF generated successfully at {fallback_path} (primary PDF was open/locked)")
 
 if __name__ == "__main__":
     build_resume_pdf()

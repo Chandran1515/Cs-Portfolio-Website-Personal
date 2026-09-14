@@ -16,6 +16,9 @@ from reportlab.pdfgen import canvas
 class NumberedCanvas(canvas.Canvas):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.setTitle("Ar. Chandran Shanmugam - 2026 Portfolio")
+        self.setAuthor("Ar. Chandran Shanmugam")
+        self.setSubject("Architectural Design & Technical Delivery Portfolio")
         self._saved_page_states = []
 
     def showPage(self):

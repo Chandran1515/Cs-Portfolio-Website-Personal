@@ -16,9 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     paloalto: ['g-paloalto'],
     monterey: ['g-monterey'],
     orangecounty: ['g-orangecounty'],
+    global:   ['g-global'],
+    experience: ['g-experience'],
     bim:      ['g-bim']
   };
-  const allGroups = ['g-paloalto','g-monterey','g-orangecounty','g-bim','g-expertise'];
+  const allGroups = ['g-paloalto','g-monterey','g-orangecounty','g-global','g-experience','g-bim','g-expertise'];
   const extraEls = document.querySelectorAll('.expertise-grid, .geo-grid, .spacer, .category-label:not([id])');
 
   document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if(f === 'all'){
         allGroups.forEach(id => { const el = document.getElementById(id); if(el){ el.style.display=''; el.nextElementSibling && (el.nextElementSibling.style.display=''); } });
         extraEls.forEach(el => el.style.display='');
-        document.getElementById('fc').textContent='Showing CS Revit Labs (15 tools) + 15 projects';
+        document.getElementById('fc').textContent='Showing All Work (15 CA projects + 6 Global projects + 15 Tools + Work History)';
       } else {
         // Hide all groups first
         allGroups.forEach(id => {
@@ -53,8 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
             while(sib && !sib.id){ sib.style.display=''; sib=sib.nextElementSibling; }
           }
         });
-        const counts = {paloalto:'1 project', monterey:'13 projects', orangecounty:'1 project', bim:'CS Revit Labs (15 tools)'};
-        document.getElementById('fc').textContent = 'Showing ' + counts[f];
+        const counts = {
+          paloalto: '1 Palo Alto project',
+          monterey: '13 Monterey County projects',
+          orangecounty: '1 Orange County project',
+          global: '6 International & India projects',
+          experience: '7 Work Experience Roles',
+          bim: 'CS Revit Labs (15 tools)'
+        };
+        document.getElementById('fc').textContent = 'Showing ' + (counts[f] || f);
       }
     });
   });
