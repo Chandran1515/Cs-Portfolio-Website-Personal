@@ -6,7 +6,7 @@
 // User Configuration Block - Easily editable
 const LINKEDIN_FEED_CONFIG = {
   // Your public LinkedIn profile URL
-  profileUrl: "https://www.linkedin.com/in/ar-chandran-shanmugam-421b7b149",
+  profileUrl: "https://www.linkedin.com/in/chandran-shanmugam-421b7b149/",
   
   // Date when you started your professional career (used to auto-calculate years of experience)
   careerStartDate: "2017-09-01",
@@ -25,21 +25,21 @@ const LINKEDIN_FEED_CONFIG = {
       title: "SheetCraft Automation Tool in Action",
       desc: "Watch how SheetCraft automates sheet naming, drawing numbering, view alignment, and titleblock coordination in Autodesk Revit.",
       embedUrl: "", // Paste your LinkedIn iframe src here
-      postUrl: "https://www.linkedin.com/in/ar-chandran-shanmugam-421b7b149/recent-activity/all/"
+      postUrl: "https://www.linkedin.com/in/chandran-shanmugam-421b7b149/recent-activity/all/"
     },
     {
       id: "aiconnector",
       title: "AI Connector Live Walkthrough",
       desc: "Demonstrating how natural language AI agents query Revit models, edit parameters, and coordinate BIM databases live.",
       embedUrl: "", // Paste your LinkedIn iframe src here
-      postUrl: "https://www.linkedin.com/in/ar-chandran-shanmugam-421b7b149/recent-activity/all/"
+      postUrl: "https://www.linkedin.com/in/chandran-shanmugam-421b7b149/recent-activity/all/"
     },
     {
       id: "batchexport",
       title: "Batch Export Suite Demonstration",
       desc: "Multi-threaded Revit API tool exporting over 100 sheets to PDF/DWG in seconds, with automatic revision matching.",
       embedUrl: "", // Paste your LinkedIn iframe src here
-      postUrl: "https://www.linkedin.com/in/ar-chandran-shanmugam-421b7b149/recent-activity/all/"
+      postUrl: "https://www.linkedin.com/in/chandran-shanmugam-421b7b149/recent-activity/all/"
     }
   ],
 
