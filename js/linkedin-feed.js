@@ -7,10 +7,10 @@
 const LINKEDIN_FEED_CONFIG = {
   // Your public LinkedIn profile URL
   profileUrl: "https://www.linkedin.com/in/chandran-shanmugam-421b7b149/",
-  
+
   // Date when you started your professional career (used to auto-calculate years of experience)
   careerStartDate: "2017-09-01",
-  
+
   // Date when you started working in California (used to auto-calculate California experience)
   californiaStartDate: "2022-09-01",
   // Date when you finished working in California (set to null if currently ongoing)
@@ -67,23 +67,23 @@ function initExperienceCalculations() {
   try {
     const startCareer = new Date(LINKEDIN_FEED_CONFIG.careerStartDate);
     const today = new Date();
-    
+
     // Calculate total years of experience
     let totalYears = today.getFullYear() - startCareer.getFullYear();
     const monthDiff = today.getMonth() - startCareer.getMonth();
     if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < startCareer.getDate())) {
       totalYears--;
     }
-    
+
     // Calculate California years
     const startCA = new Date(LINKEDIN_FEED_CONFIG.californiaStartDate);
-    const endCA = LINKEDIN_FEED_CONFIG.californiaEndDate 
-      ? new Date(LINKEDIN_FEED_CONFIG.californiaEndDate) 
+    const endCA = LINKEDIN_FEED_CONFIG.californiaEndDate
+      ? new Date(LINKEDIN_FEED_CONFIG.californiaEndDate)
       : today;
-      
+
     let caDiffMs = endCA.getTime() - startCA.getTime();
     let caYears = (caDiffMs / (1000 * 60 * 60 * 24 * 365.25)).toFixed(1);
-    
+
     // Convert to a clean text representation (e.g. 8+, 3.5+)
     const totalExpText = `${totalYears}+`;
     const caExpText = `${parseFloat(caYears)}+`;
@@ -134,10 +134,10 @@ function initLinkedInFeed() {
         <p>Loading recent posts from LinkedIn...</p>
       </div>
     `;
-    
+
     // Fetch RSS feed via a free RSS-to-JSON API
     const rssJsonUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(LINKEDIN_FEED_CONFIG.rssFeedUrl)}`;
-    
+
     fetch(rssJsonUrl)
       .then(res => res.json())
       .then(data => {
@@ -149,7 +149,7 @@ function initLinkedInFeed() {
             // Check if item has a video/image or link
             const title = item.title || "New Update";
             const pubDate = new Date(item.pubDate).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
-            
+
             // Extract text snippet (remove HTML tags)
             let desc = item.description || "";
             desc = desc.replace(/<[^>]*>/g, "").substring(0, 140) + "...";
@@ -194,7 +194,7 @@ function renderFallbackCards(container) {
   LINKEDIN_FEED_CONFIG.embeddedPosts.forEach(post => {
     const card = document.createElement("div");
     card.className = "demo-card";
-    
+
     let mediaHtml = "";
     if (post.embedUrl && post.embedUrl.trim() !== "") {
       mediaHtml = `<iframe src="${post.embedUrl}" allowfullscreen title="${post.title}"></iframe>`;
